@@ -124,6 +124,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 restart
 
 -- Android Studio
+export PATH=${PATH}:/home/YOUR-USERNAME/path/to/adb
 
 -- Postman
 1. install by snap
