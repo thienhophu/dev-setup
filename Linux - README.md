@@ -65,9 +65,10 @@ sudo systemctl status mysql
 ##### Setup
 ```
 sudo mysql_secure_installation
-```
 // no validate password
 // y y y y
+```
+##### Login into MySQL
 ```
 sudo mysql -u root -p
 ```
