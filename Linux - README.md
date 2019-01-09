@@ -1,14 +1,14 @@
 # Linux Dev Setup
 
-### curl
+## Curl
 #### install
 ```
 sudo apt-get install curl
 ```
 
-### vscode
+## VSCODE
 
-### git
+## Git
 ##### install
 ```
 sudo apt install git
@@ -19,7 +19,7 @@ git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
 ```
 
-### ZSH
+## Zsh
 ##### Install
 ```
 sudo apt-get install zsh
@@ -37,7 +37,7 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-### SSH Keys
+## SSH Keys
 ##### Run
 ```
 ssh-keygen
