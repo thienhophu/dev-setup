@@ -99,12 +99,13 @@ sudo apt install php7.1-mysql php7.1-json php7.1-zip php7.1-cli php7.1-curl php7
 
 ## Composer
 ##### Install
+```
 //curl -sS https://getcomposer.org/installer -o composer-setup.php
 //sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-```
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer 
-```
+curl -sS https://getcomposer.org/installer
+sudo php -- --install-dir=/usr/local/bin --filename=composer 
 //rm composer-setup.php
+```
 ##### Set own permission
 ```
 sudo chown -R $USER $HOME/.composer
