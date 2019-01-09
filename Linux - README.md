@@ -214,11 +214,11 @@ export PATH=${PATH}:/home/{USER}/path/to/adb
 ```
 
 ## Postman
-##### install by snap
+##### Install by snap
 ```
 snap install postman
 ```
-##### if cant run this library
+##### If cant run this library
 ```
 sudo apt-get install libgconf-2-4
 ```
@@ -231,20 +231,19 @@ sudo apt-get install stacer
 ```
 
 ## GitEye
-##### Extract
-##### set superowner
+##### Extract and Set super owner for GitEye
 ```
 sudo chown -R root:root GitEye
 ```
-##### switch content
+##### Switch content
 ```
 sudo mv GitEye /opt/GitEye
 ```
-##### open with terminal
+##### Open GitEye in terminal (Note: It will keep running GitEye on that tab).
 ```
 sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
 ```
-##### Add this to giteye.ini
+##### In case of JAVA location not found, add this to giteye.ini
 ```
 -vm
 /home/thienho/.sdkman/candidates/java/current/bin
@@ -254,6 +253,9 @@ sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
 ```
 sudo apt-get install thunderbird
 ```
+Note: To convert plain text email to html email, go to Preferences->Composition->Send Options
+- Uncheck 'Send messages as plain text if possible
+- Select 'Send the message in HTML anyway
 
 ## GRUB Customizer
 ```
@@ -262,12 +264,41 @@ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 
 ## Visual Code - Ext
 ### Fira Code -- Font
-##### install
+##### Install
 ```
 sudo apt install fonts-firacode
 ```
-##### add to vscode
+##### Add to vscode
 ```
 "editor.fontFamily": "Fira Code",
 "editor.fontLigatures": true,
+```
+### TSlint Config - Prettier
+##### Install
+```
+npm install --save-dev tslint-config-prettier
+```
+##### Add Prettier config to VSCODE by creating .prettierignore and .prettierrc
+###### .prettierignore
+```
+node_modules
+ios
+android
+.vscode
+package.json
+```
+###### .prettierrc
+```
+{
+  "printWidth": 100,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all"
+}
+```
+##### Add extends to tslint.json
+```
+"extends": [
+    "tslint-config-prettier"
+  ]
 ```
