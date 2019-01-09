@@ -154,3 +154,11 @@ sudo apt-get install thunderbird
 
 -- GRUB Customizer
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+
+
+-- Visual Code - Ext
+// install
+sudo apt install fonts-firacode
+// add to vscode
+"editor.fontFamily": "Fira Code",
+"editor.fontLigatures": true,
