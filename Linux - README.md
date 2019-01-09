@@ -302,3 +302,11 @@ package.json
     "tslint-config-prettier"
   ]
 ```
+
+## Create Launcher on 18.10
+### Gnome-panel
+##### Install Gnome Panel then generate new desktop launcher
+```
+sudo apt  install --no-install-recommends gnome-panel
+gnome-desktop-item-edit ~/Desktop/ --create-new 
+```
