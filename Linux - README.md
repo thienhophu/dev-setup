@@ -311,3 +311,7 @@ package.json
 sudo apt  install --no-install-recommends gnome-panel
 gnome-desktop-item-edit ~/Desktop/ --create-new 
 ```
+###### Copy new launcher to Applications folder
+```
+.local/share/applications/
+```
