@@ -1,164 +1,272 @@
-Linux
+# Linux Dev Setup
 
--- curl
-1. install
+### curl
+#### install
+```
 sudo apt-get install curl
+```
 
--- vscode
+### vscode
 
--- git
-1. install
+### git
+##### install
+```
 sudo apt install git
+```
 2. config user infor
+```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
+```
 
--- ZSH
-1. Install
+### ZSH
+##### Install
+```
 sudo apt-get install zsh
-2. Set default shell
+```
+
+##### Set default shell
+```
 chsh -s $(which zsh)
 //Logout
-option 2
+```
+##### Pick option 2 when open terminal the first time after install zsh
 
--- Oh My Zsh
+### Oh My Zsh
+```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
--- SSH Keys
+### SSH Keys
+##### Run
+```
 ssh-keygen
-(without using passpharse for dev)
-For SSH Access:
-ssh-copy-id username@remote_host
-For manual:
-cat ~/.ssh/id_rsa.pub
+//(without using passpharse for dev)
+```
 
--- MySQL5.7
-1. install
+##### For SSH Access:
+```
+ssh-copy-id username@remote_host
+```
+##### For manual
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+## MySQL 5.7
+##### Install
+```
 sudo apt install mysql-server
-2. Check
+```
+##### Check
+```
 sudo systemctl status mysql
-3. setup
+```
+##### Setup
+```
 sudo mysql_secure_installation
+```
 // no validate password
 // y y y y
+```
 sudo mysql -u root -p
+```
+##### Change role
+```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
 FLUSH PRIVILEGES;
-// start at boot
+```
+##### Start at boot
+```
 sudo systemctl enable mysql
+```
 
--- PHP7.1
-// add
+## PHP7.1
+##### Add repos
+```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-// install
+```
+##### Install
+```
 sudo apt-get install -y php7.1
-// related modules
+```
+##### Related modules
+```
 sudo apt install php7.1-mysql php7.1-json php7.1-zip php7.1-cli php7.1-curl php7.1-sqlite3 php7.1-gd php7.1-xml php7.1-mcrypt php7.1-mbstring php7.1-iconv
+```
 
-
--- Composer
+## Composer
+##### Install
 //curl -sS https://getcomposer.org/installer -o composer-setup.php
 //sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer 
+```
 //rm composer-setup.php
-// set own
+##### Set own permission
+```
 sudo chown -R $USER $HOME/.composer
-// add path
+```
+##### Add path
+```
 echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
+```
 
--- Valet
+## Valet
+##### Install
+```
 sudo apt-get install network-manager jq xsel libnss3-tools
 composer global require cpriego/valet-linux
 valet install
-// projects directory
+```
+##### Park projects directory
+```
 valet park
+```
+#### Change to HTTPS
+```
+valet secure [folder]
+```
 
--- Laravel
+## Laravel
+##### Install using composer
+```
 composer global require laravel/installer
+```
 
--- NVM
-1. install for zsh (check update before install)
+## NVM
+##### Install for zsh (check update before install)
+```
 curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
-2. env variable
+```
+##### env variable
+```
 export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-// restart ternimal
-// install node
+```
+##### Restart ternimal
+##### Install node
 
--- Yarn
-1. add repo
+## Yarn
+##### add repo
+```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-2. update and install
+```
+##### update and install
+```
 sudo apt-get update
 sudo apt-get install --no-install-recommends yarn
+```
 
--- SDKMAN
+## SDKMAN
+##### Install with zsh
+```
 curl -s "https://get.sdkman.io" | zsh
-// new terminal
+```
+##### Run in new terminal
+```
 source "/home/thienho/.sdkman/bin/sdkman-init.sh"
+```
 
--- JAVA
+## JAVA
+##### Install by SDKMAN
+```
 sdk install java 8.0.192-zulu
-// add java to path
+```
+##### Add to path
+```
 #THIS IS FOR JAVA PATH
 export PATH=${PATH}:${JAVA_HOME}/bin
 export JAVA_HOME
--- RUBY
+```
 
--- Snap
-1. Check snap
+## RUBY
+
+## Snap
+##### Check snap
+```
 snap version
-2. Install if not available
+```
+##### Install if not available
+```
 sudo apt install snapd snapd-xdg-open
+```
 
--- Flatpak
+## Flatpak
+##### Install
+```
 sudo add-apt-repository ppa:alexlarsson/flatpak
 sudo apt update
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-restart
+```
+##### restart
 
--- Android Studio
-export PATH=${PATH}:/home/YOUR-USERNAME/path/to/adb
+## Android Studio
+```
+export PATH=${PATH}:/home/{USER}/path/to/adb
+```
 
--- Postman
-1. install by snap
+## Postman
+##### install by snap
+```
 snap install postman
-2. if cant run this library
+```
+##### if cant run this library
+```
 sudo apt-get install libgconf-2-4
+```
 
--- Tracer
+## Tracer
+```
 sudo add-apt-repository ppa:oguzhaninan/stacer
 sudo apt-get update
 sudo apt-get install stacer
+```
 
--- GitEye
-1. Extract
-2. set superowner
+## GitEye
+##### Extract
+##### set superowner
+```
 sudo chown -R root:root GitEye
-3. switch content
+```
+##### switch content
+```
 sudo mv GitEye /opt/GitEye
-// open with terminal
+```
+##### open with terminal
+```
 sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
-// Add this to giteye.ini
+```
+##### Add this to giteye.ini
+```
 -vm
 /home/thienho/.sdkman/candidates/java/current/bin
+```
 
--- Thunderbird
+## Thunderbird
+```
 sudo apt-get install thunderbird
+```
 
--- GRUB Customizer
+## GRUB Customizer
+```
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+```
 
-
--- Visual Code - Ext
-// install
+## Visual Code - Ext
+### Fira Code -- Font
+##### install
+```
 sudo apt install fonts-firacode
-// add to vscode
+```
+##### add to vscode
+```
 "editor.fontFamily": "Fira Code",
 "editor.fontLigatures": true,
+```
