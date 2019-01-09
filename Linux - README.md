@@ -9,11 +9,11 @@ sudo apt-get install curl
 ## VSCODE
 
 ## Git
-##### install
+##### Install
 ```
 sudo apt install git
 ```
-2. config user infor
+##### Config user info
 ```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
