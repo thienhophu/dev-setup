@@ -151,6 +151,12 @@ sudo apt-get install build-essential
 sudo apt-get install python2.7    
 sudo ln -s /usr/bin/python2.7 /usr/bin/python 
 ```
+##### add python to path
+```
+# THIS IS FOR PYTHON 2.7
+export PYTHONPATH=$PYTHONPATH:/usr/bin/python
+export PATH=$PATH:/usr/bin/python
+```
 
 ## NVM
 ##### Install for zsh (check update before install)
