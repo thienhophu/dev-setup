@@ -139,6 +139,13 @@ valet secure [folder]
 composer global require laravel/installer
 ```
 
+## Python 2.7
+##### Install
+```
+sudo apt-get install python2.7    
+sudo ln -s /usr/bin/python2.7 /usr/bin/python 
+```
+
 ## NVM
 ##### Install for zsh (check update before install)
 ```
