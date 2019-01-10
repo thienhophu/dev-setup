@@ -139,6 +139,12 @@ valet secure [folder]
 composer global require laravel/installer
 ```
 
+## Essential Build Package
+##### Install
+```
+sudo apt-get install build-essential
+```
+
 ## Python 2.7
 ##### Install
 ```
