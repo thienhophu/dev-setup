@@ -1,4 +1,4 @@
-MacOS
+# MacOS - Dev Setup
 
 ## VSCODE -- Extension
 #### Fira Code -- Font
