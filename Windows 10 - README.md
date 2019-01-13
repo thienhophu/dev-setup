@@ -1,5 +1,18 @@
 # Windows 10 - Dev Setup
 
+## Uninstall unused packages
+```
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage *zune* | Remove-AppxPackage
+Get-AppxPackage *people* | Remove-AppxPackage
+Get-AppxPackage *messaging* | Remove-AppxPackage
+Get-AppxPackage *maps* | Remove-AppxPackage
+Get-AppxPackage *camera* | Remove-AppxPackage
+Get-AppxPackage *gethelp* | Remove-AppxPackage
+Get-AppxPackage *maps* | Remove-AppxPackage
+Get-AppxPackage *soundrecorder* | Remove-AppxPackage
+```
+
 ## Hyper.js
 ##### Install from https://hyper.is/
 ##### Using Powershell
