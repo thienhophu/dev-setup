@@ -1,5 +1,11 @@
 # MacOS - Dev Setup
 
+## Homebrew
+##### Install
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ## Curl
 ## Git
 ## ZSH
