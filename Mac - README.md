@@ -1,5 +1,39 @@
 # MacOS - Dev Setup
 
+## Curl
+## Git
+## ZSH
+## Oh My Zsh
+## SSH Keys
+## VSCODE
+##### Install from https://code.visualstudio.com/ 
+
+## SDKMAN
+## Java
+## SourceTree
+## GitFork
+## GitEye
+
+## MySQL 5.7
+## PHP 7.1
+## Composer
+## Valet
+## Laravel
+
+## Essential Build Package
+## Python 2.7
+## NVM
+## Node
+## Yarn
+
+## Ruby
+
+## Android Studio
+
+## Postman
+
+## 
+
 ## Upgrading Bash
 ##### Install Bash with Brew
 ```
