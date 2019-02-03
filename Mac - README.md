@@ -79,6 +79,9 @@ sudo gem install cocoapods
 ## NVM
 ## Node
 ## Yarn
+```
+brew install yarn --without-node
+```
 
 ## Ruby
 
