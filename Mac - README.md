@@ -83,6 +83,14 @@ brew install rbenv
 ## Essential Build Package
 ## Python 2.7
 ## NVM
+##### Install via Curl
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+```
+##### Install via Wget
+```
+```
+
 ## Node
 ## Yarn
 ```
