@@ -47,6 +47,21 @@ pbcopy < ~/.ssh/id_rsa.pub
 ## VSCODE
 ##### Install from https://code.visualstudio.com/ 
 
+## Hyper.js
+##### Install via Homebrew
+```
+brew update
+brew cask install hyper
+```
+##### Set ZSH as default shell
+```
+shell: 'zsh'
+```
+
+## Cocoapods
+```
+sudo gem install cocoapods
+```
 ## SDKMAN
 ## Java
 ## SourceTree
