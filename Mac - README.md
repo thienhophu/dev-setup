@@ -62,6 +62,12 @@ shell: 'zsh'
 ```
 sudo gem install cocoapods
 ```
+
+## rbenv
+##### Install via Homebrew
+```
+brew install rbenv
+```
 ## SDKMAN
 ## Java
 ## SourceTree
