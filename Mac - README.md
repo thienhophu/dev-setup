@@ -120,6 +120,11 @@ sudo code /etc/shells
 #!/usr/bin/env bash
 ```
 
+## Sentry CLI
+```
+curl -sL https://sentry.io/get-cli/ | bash
+```
+
 ## VSCODE -- Extension
 #### Fira Code -- Font
 ##### Install font
