@@ -5,12 +5,45 @@
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+##### Clean up brew
+```
+brew cleanup
+```
 
 ## Curl
+##### Install via Homebrew
+```
+brew install curl
+```
+
 ## Git
+#### Install via Homebrew
+```
+brew install git
+```
+
 ## ZSH
+##### Install via Homebrew
+```
+brew install zsh
+```
+
 ## Oh My Zsh
+##### Install via curl
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+##### Install via wget
+```
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
 ## SSH Keys
+```
+ssh-keygen -t rsa
+// Copy to clipboard
+pbcopy < ~/.ssh/id_rsa.pub
+```
 ## VSCODE
 ##### Install from https://code.visualstudio.com/ 
 
