@@ -38,6 +38,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
+## Default Directory
+```
+echo "cd ~/projects" >> ~/.zshrc
+```
+
 ## SSH Keys
 ```
 ssh-keygen -t rsa
