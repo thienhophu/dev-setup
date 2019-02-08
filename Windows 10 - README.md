@@ -11,6 +11,7 @@ Get-AppxPackage *camera* | Remove-AppxPackage
 Get-AppxPackage *gethelp* | Remove-AppxPackage
 Get-AppxPackage *maps* | Remove-AppxPackage
 Get-AppxPackage *soundrecorder* | Remove-AppxPackage
+Get-AppxPackage *yourphone* | Remove-AppxPackage
 ```
 
 ## Hyper.js
