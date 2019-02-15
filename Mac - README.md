@@ -90,13 +90,16 @@ brew install rbenv
 ## NVM
 ##### Install via Curl
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-```
-##### Install via Wget
-```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
 ```
 
 ## Node
+##### Install via NVM
+```
+nvm install [version]
+nvm use [version]
+```
+
 ## Yarn
 ```
 brew install yarn --without-node
