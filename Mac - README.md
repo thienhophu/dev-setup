@@ -81,6 +81,22 @@ brew install rbenv
 
 ## MySQL 5.7
 ## PHP 7.1
+
+## Xdebug
+##### Install via Pecl
+```
+pecl install xdebug
+```
+##### Enter this in /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
+```
+[xdebug]
+#zend_extension=/usr/local/Cellar/php@7.2/7.2.13/pecl/20170718/xdebug.so
+xdebug.remote_autostart=On
+xdebug.remote_enable=On
+xdebug.max_nesting_level=2048]
+```
+###### Restart Valet
+
 ## Composer
 ## Valet
 ## Laravel
