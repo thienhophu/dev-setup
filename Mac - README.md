@@ -161,3 +161,13 @@ brew cask install font-fira-code
 "editor.fontFamily": "Fira Code",
 "editor.fontLigatures": true,
 ```
+
+## Charles
+##### Install from offical page
+```
+https://www.charlesproxy.com/
+```
+##### Charles Hacking
+```
+https://github.com/100apps/charles-hacking
+```
