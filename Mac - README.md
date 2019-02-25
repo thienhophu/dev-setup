@@ -80,9 +80,47 @@ brew install rbenv
 ## GitEye
 
 ## MySQL 5.7
-## PHP 7.1
+##### Install via Brew
+```
+brew install mysql@5.7
+```
 
-## Xdebug
+## MySQL 8.0
+##### Install via Brew
+```
+brew install mysql
+```
+## PHP 7.2
+```
+brew install php72
+
+```
+## PHP 7.3
+```
+brew install php
+```
+
+
+
+## Composer
+##### Install via Brew
+```
+brew install composer
+```
+##### Add to PATH
+```
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
+source ~/.zshrc
+echo $PATH
+```
+
+## Valet
+```
+composer global require laravel/valet
+valet install
+```
+
+## Xdebug for PHP 7.2
 ##### Install via Pecl
 ```
 pecl install xdebug
@@ -97,8 +135,6 @@ xdebug.max_nesting_level=2048]
 ```
 ###### Restart Valet
 
-## Composer
-## Valet
 ## Laravel
 
 ## Essential Build Package
