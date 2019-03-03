@@ -1,5 +1,11 @@
 # MacOS - Dev Setup
 
+## MacOS Mojave
+```
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+```
+
 ## Homebrew
 ##### Install
 ```
