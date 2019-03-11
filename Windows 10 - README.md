@@ -43,6 +43,16 @@ Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProt
 # PHP 7.2
 Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/cretueusebiu/valet-windows/raw/master/bin/php72.ps1" -OutFile $env:temp\php72.ps1; ."$env:temp\php72.ps1"
 ```
+https://getcomposer.org/Composer-Setup.exe
+
+```
+composer global require cretueusebiu/valet-windows
+valet install
+```
+##### Manual config for Windows 10
+http://mayakron.altervista.org/wikibase/show.php?id=AcrylicWindows10Configuration
+##### Install ImageMagick
+https://mlocati.github.io/articles/php-windows-imagick.html
 
 
 ## VSCODE Extension 
