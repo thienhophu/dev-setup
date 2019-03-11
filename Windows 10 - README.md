@@ -3,6 +3,7 @@
 ## Uninstall unused packages
 ```
 Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
+Get-AppxPackage *alarm* | Remove-AppxPackage
 Get-AppxPackage *zune* | Remove-AppxPackage
 Get-AppxPackage *people* | Remove-AppxPackage
 Get-AppxPackage *messaging* | Remove-AppxPackage
