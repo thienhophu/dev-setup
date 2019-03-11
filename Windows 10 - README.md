@@ -14,6 +14,8 @@ Get-AppxPackage *maps* | Remove-AppxPackage
 Get-AppxPackage *soundrecorder* | Remove-AppxPackage
 Get-AppxPackage *yourphone* | Remove-AppxPackage
 Get-AppxPackage *xbox* | Remove-AppxPackage
+Get-AppxPackage *3dviewer* | Remove-AppxPackage
+Get-AppxPackage *portal* | Remove-AppxPackage
 ```
 
 ## Hyper.js
