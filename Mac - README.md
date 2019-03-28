@@ -140,6 +140,10 @@ xdebug.remote_autostart=On
 xdebug.remote_enable=On
 xdebug.max_nesting_level=2048]
 ```
+##### Config Xdebug
+```
+php -i | grep "Loaded Configuration File"
+```
 ###### Restart Valet
 
 ## Laravel
