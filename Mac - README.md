@@ -57,7 +57,7 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 ## VSCODE
-##### Install from https://code.visualstudio.com/ 
+##### Install from https://code.visualstudio.com/
 
 ## Hyper.js
 ##### Install via Homebrew
@@ -144,6 +144,15 @@ xdebug.max_nesting_level=2048]
 ```
 php -i | grep "Loaded Configuration File"
 ```
+##### Add Xdebug Config (Not working)
+```
+; with no limits
+; (maximum nesting is 1023)
+xdebug.var_display_max_depth = -1
+xdebug.var_display_max_children = -1
+xdebug.var_display_max_data = -1
+
+```
 ###### Restart Valet
 
 ## Laravel
@@ -174,7 +183,7 @@ brew install yarn --without-node
 
 ## Postman
 
-## 
+##
 
 ## Upgrading Bash
 ##### Install Bash with Brew
@@ -204,7 +213,7 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 ```
 ##### Add to vscode
-``` 
+```
 "editor.fontFamily": "Fira Code",
 "editor.fontLigatures": true,
 ```
