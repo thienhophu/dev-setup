@@ -32,6 +32,13 @@ shell: 'C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe',
 C:\Users\{USER}\AppData\Local\Android\Sdk\platform-tools
 ```
 
+## WAMPSERVER
+##### Check all the vsdist before install
+##### Remove MySQL
+##### Login into MariaDB with root/(blank)
+##### Set password for root@localhost
+
+
 ## Chocolatey - Package Manager
 ##### Install - https://chocolatey.org/
 
