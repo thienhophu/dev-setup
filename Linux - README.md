@@ -82,19 +82,34 @@ FLUSH PRIVILEGES;
 sudo systemctl enable mysql
 ```
 
-## PHP7.1
+## PHP
 ##### Add repos
 ```
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 ```
-##### Install
+##### Install 7.1
 ```
 sudo apt-get install -y php7.1
 ```
-##### Related modules
+##### Related modules PHP7.1
 ```
 sudo apt install php7.1-mysql php7.1-json php7.1-zip php7.1-cli php7.1-curl php7.1-sqlite3 php7.1-gd php7.1-xml php7.1-mcrypt php7.1-mbstring php7.1-iconv
+```
+##### Install 7.2
+```
+sudo apt-get install php7.2 php7.2-cli php7.2-common
+```
+##### Related modules PHP7.2
+```
+sudo apt-get install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-intl php7.2-mysql php7.2-xml php7.2-zip
+```
+##### Install 7.3
+```
+sudo apt-get install -y php7.3
+```
+##### Related modules PHP7.3
+```
 ```
 
 ## Composer
