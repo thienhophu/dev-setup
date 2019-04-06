@@ -216,6 +216,10 @@ snap version
 ```
 sudo apt install snapd snapd-xdg-open
 ```
+##### Install VSCODE
+```
+sudo snap install code --classic
+```
 
 ## Flatpak
 ##### Install
