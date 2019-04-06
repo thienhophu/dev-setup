@@ -116,10 +116,10 @@ sudo apt-get install php7.3-curl php7.3-gd php7.3-json php7.3-mbstring php7.3-in
 ## Composer
 ##### Install
 ```
-//curl -sS https://getcomposer.org/installer -o composer-setup.php
-//sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-curl -sS https://getcomposer.org/installer
-sudo php -- --install-dir=/usr/local/bin --filename=composer 
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+//curl -sS https://getcomposer.org/installer
+//sudo php -- --install-dir=/usr/local/bin --filename=composer 
 //rm composer-setup.php
 ```
 ##### Set own permission
