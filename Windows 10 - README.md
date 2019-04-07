@@ -41,6 +41,14 @@ C:\Users\{USER}\AppData\Local\Android\Sdk\platform-tools
 
 ## Chocolatey - Package Manager
 ##### Install - https://chocolatey.org/
+##### Install via CMD (Admin)
+```
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+##### Upgrade
+```
+choco upgrade chocolatey
+```
 
 ## Valet Windows
 ```
