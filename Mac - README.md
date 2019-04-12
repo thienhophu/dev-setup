@@ -81,6 +81,14 @@ sudo gem install cocoapods
 brew install rbenv
 ```
 ## SDKMAN
+##### Install via curl
+```
+curl -s "https://get.sdkman.io" | zsh
+```
+##### New terminal
+```
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+```
 ## Java
 ## SourceTree
 ## GitFork
