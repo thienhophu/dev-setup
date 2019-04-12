@@ -88,8 +88,14 @@ curl -s "https://get.sdkman.io" | zsh
 ##### New terminal
 ```
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 ```
 ## Java
+##### Install via SDKMan
+```
+sdk install java 8.0.202-zulu
+```
+
 ## SourceTree
 ## GitFork
 ## GitEye
