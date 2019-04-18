@@ -104,6 +104,16 @@ sdk install java 8.0.202-zulu
 ##### Install via Brew
 ```
 brew install mysql@5.7
+echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+brew services start mysql@5.7 
+restart terminal
+```
+##### Secure your mysql
+```
+mysql_secure_installation
+(validate password) no
+(enter new password)
+(Y Y Y Y)
 ```
 
 ## MySQL 8.0
