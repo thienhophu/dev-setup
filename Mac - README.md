@@ -194,7 +194,24 @@ brew install automake
 pecl install xdebug
 (restart valet)
 ```
-
+##### Add to bottom of php.ini
+```
+[XDebug]
+zend_extension="xdebug.so"
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_handler=dbgp
+xdebug.remote_mode=req
+xdebug.remote_host=127.0.0.1
+xdebug.remote_port=9000
+```
+##### Add to launch.json of VSCode
+```
+"xdebugSettings": 
+{
+  "max_depth": 200,
+}
+```
 
 ## Laravel
 
