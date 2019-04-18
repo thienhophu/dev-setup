@@ -115,6 +115,10 @@ mysql_secure_installation
 (enter new password)
 (Y Y Y Y)
 ```
+##### Import from sql
+```
+mysql -u root -p database_name < file.sql
+```
 
 ## MySQL 8.0
 ##### Install via Brew
