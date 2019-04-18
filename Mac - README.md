@@ -179,6 +179,19 @@ xdebug.var_display_max_data = -1
 ```
 ###### Restart Valet
 
+## Xdebug for PHP 7.3
+##### Install tools via brew
+```
+brew install autoconf
+brew install automake
+```
+##### Instal via Pecl
+```
+pecl install xdebug
+(restart valet)
+```
+
+
 ## Laravel
 
 ## Essential Build Package
@@ -198,7 +211,7 @@ nvm use [version]
 
 ## Yarn
 ```
-brew install yarn --without-node
+brew install yarn
 ```
 
 ## Ruby
