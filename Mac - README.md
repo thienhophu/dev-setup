@@ -155,34 +155,6 @@ composer global require laravel/valet
 valet install
 ```
 
-## Xdebug for PHP 7.2
-##### Install via Pecl
-```
-pecl install xdebug
-```
-##### Enter this in /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
-```
-[xdebug]
-#zend_extension=/usr/local/Cellar/php@7.2/7.2.13/pecl/20170718/xdebug.so
-xdebug.remote_autostart=On
-xdebug.remote_enable=On
-xdebug.max_nesting_level=2048]
-```
-##### Config Xdebug
-```
-php -i | grep "Loaded Configuration File"
-```
-##### Add Xdebug Config (Not working)
-```
-; with no limits
-; (maximum nesting is 1023)
-xdebug.var_display_max_depth = -1
-xdebug.var_display_max_children = -1
-xdebug.var_display_max_data = -1
-
-```
-###### Restart Valet
-
 ## Xdebug for PHP 7.3
 ##### Install tools via brew
 ```
@@ -194,7 +166,8 @@ brew install automake
 pecl install xdebug
 (restart valet)
 ```
-##### Add to bottom of php.ini
+##### Locate php by php --ini
+##### Add to bottom of conf.d/ext-xdebug.ini
 ```
 [XDebug]
 zend_extension="xdebug.so"
