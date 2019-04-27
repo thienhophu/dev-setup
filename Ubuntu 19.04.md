@@ -61,3 +61,10 @@ cat ~/.ssh/id_rsa.pub
 ```
 ssh-copy-id username@remote_host
 ```
+
+## GitEye
+##### Add to GitEye.ini
+```
+-vm
+C:/Program Files/Java/jre7/bin/javaw.exe
+```
