@@ -1,4 +1,4 @@
-# Linux Dev Setup
+# Ubuntu 18.04 LTS
 
 ## Curl
 #### install
