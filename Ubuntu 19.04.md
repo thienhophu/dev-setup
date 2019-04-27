@@ -47,3 +47,17 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+
+## SSH Keys
+```
+ssh-keygen
+//(without using passpharse for dev)
+```
+##### Copy manual
+```
+cat ~/.ssh/id_rsa.pub
+```
+##### Copy SSH Access:
+```
+ssh-copy-id username@remote_host
+```
