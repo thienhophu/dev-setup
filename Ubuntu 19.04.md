@@ -7,6 +7,34 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
+## Snap with Tools
+#### Visual Studio
+```
+snap install code --classic
+```
+#### Discord
+```
+snap install discord
+```
+#### Postman
+```
+snap install postman
+sudo snap switch --channel=candidate postman
+sudo snap refresh postman
+```
+#### Vectr
+```
+snap install vectr
+```
+#### GitHub Desktop
+```
+snap install github-desktop
+```
+##### Gimp
+```
+snap install gimp
+```
+
 ## Git
 ##### Install
 ```
@@ -16,12 +44,6 @@ sudo apt-get install git
 ```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
-```
-
-## Snap with Tools
-#### Visual Studio
-```
-snap install code --classic
 ```
 
 ## Curl
