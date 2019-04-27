@@ -21,6 +21,7 @@ snap install discord
 snap install postman
 sudo snap switch --channel=candidate postman
 sudo snap refresh postman
+sudo apt-get install libgconf-2-4
 ```
 #### Vectr
 ```
@@ -268,10 +269,6 @@ snap version
 ```
 sudo apt install snapd snapd-xdg-open
 ```
-##### Install VSCODE
-```
-sudo snap install code --classic
-```
 
 ## Flatpak
 ##### Install
@@ -287,16 +284,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ## Android Studio
 ```
 export PATH=${PATH}:/home/{USER}/path/to/adb
-```
-
-## Postman
-##### Install by snap
-```
-snap install postman
-```
-##### If cant run this library
-```
-sudo apt-get install libgconf-2-4
 ```
 
 ## Tracer
