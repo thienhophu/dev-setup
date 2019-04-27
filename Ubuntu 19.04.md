@@ -71,18 +71,99 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 
 ## SSH Keys
+##### Run
 ```
 ssh-keygen
 //(without using passpharse for dev)
 ```
-##### Copy manual
-```
-cat ~/.ssh/id_rsa.pub
-```
-##### Copy SSH Access:
+
+##### For SSH Access:
 ```
 ssh-copy-id username@remote_host
 ```
+##### For manual
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+## MySQL 5.7
+##### Install
+```
+sudo apt install mysql-server
+```
+##### Check
+```
+sudo systemctl status mysql
+```
+##### Setup
+```
+sudo mysql_secure_installation
+// no validate password
+// y y y y
+```
+##### Login into MySQL
+```
+sudo mysql -u root -p
+```
+##### Change role
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+FLUSH PRIVILEGES;
+```
+##### Start at boot
+```
+sudo systemctl enable mysql
+```
+
+## PHP
+##### Add repos
+```
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+```
+##### Install 7.3
+```
+sudo apt-get install -y php7.3
+```
+##### Related modules PHP7.3
+```
+sudo apt-get install php7.3-curl php7.3-gd php7.3-json php7.3-mbstring php7.3-intl php7.3-mysql php7.3-xml php7.3-zip
+```
+
+## Composer
+##### Install
+```
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+rm composer-setup.php
+```
+##### Set own permission
+```
+sudo chown -R $USER $HOME/.composer
+```
+##### Add path
+```
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
+source ~/.zshrc
+echo $PATH
+```
+
+## Valet
+##### Install
+```
+sudo apt-get install network-manager jq xsel libnss3-tools
+composer global require cpriego/valet-linux
+valet install
+```
+##### Park projects directory
+```
+valet park
+```
+#### Change to HTTPS
+```
+valet secure [folder]
+```
+
 
 ## GitEye
 ##### Add to GitEye.ini
