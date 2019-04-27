@@ -1,4 +1,4 @@
-Ubuntu 19.04
+# Ubuntu 19.04
 
 ## Post Install OS
 ```
@@ -35,8 +35,12 @@ snap install github-desktop
 snap install gimp
 ```
 
+## Curl
+```
+sudo apt-get install curl
+```
+
 ## Git
-##### Install
 ```
 sudo apt-get install git
 ```
@@ -46,13 +50,7 @@ git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
 ```
 
-## Curl
-```
-sudo apt-get install curl
-```
-
 ## Zsh
-##### Install
 ```
 sudo apt-get install zsh
 ```
@@ -68,7 +66,6 @@ chsh -s $(which zsh)
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-
 
 ## SSH Keys
 ##### Run
@@ -163,9 +160,37 @@ valet park
 ```
 valet secure [folder]
 ```
-#### Error
-If show Apache2, restart valet and park the folder again.
+##### If show Apache 2 It's Work
+```
+service apache2 stop
+valet restart
+valet park
+```
 
+## NVM
+##### Install for zsh (check update before install)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | zsh
+```
+##### env variable
+```
+export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+##### Restart ternimal
+##### Install node
+
+## Yarn
+##### add repo
+```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+##### update and install
+```
+sudo apt-get update
+sudo apt-get install --no-install-recommends yarn
+```
 
 ## GitEye
 ##### Add to GitEye.ini

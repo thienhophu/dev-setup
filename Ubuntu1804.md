@@ -1,16 +1,34 @@
 # Ubuntu 18.04 LTS
 
-## Post Install
+## Post Install OS
 ```
 sudo apt-get autoremove
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-## Install Tools via Snap
+## Snap with Tools
 ##### Visual Code
 ```
 snap install code --classic
+```
+#### Discord
+```
+snap install discord
+```
+#### Postman
+```
+snap install postman
+sudo snap switch --channel=candidate postman
+sudo snap refresh postman
+```
+#### Vectr
+```
+snap install vectr
+```
+#### GitHub Desktop
+```
+snap install github-desktop
 ```
 ##### Gimp
 ```
@@ -18,15 +36,11 @@ snap install gimp
 ```
 
 ## Curl
-#### install
 ```
 sudo apt-get install curl
 ```
 
-## VSCODE
-
 ## Git
-##### Install
 ```
 sudo apt install git
 ```
@@ -37,7 +51,6 @@ git config --global user.email thien.ho@manifera.com
 ```
 
 ## Zsh
-##### Install
 ```
 sudo apt-get install zsh
 ```
@@ -200,7 +213,7 @@ export PATH=$PATH:/usr/bin/python
 ## NVM
 ##### Install for zsh (check update before install)
 ```
-curl https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | zsh
 ```
 ##### env variable
 ```
