@@ -163,6 +163,8 @@ valet park
 ```
 valet secure [folder]
 ```
+#### Error
+If show Apache2, restart valet and park the folder again.
 
 
 ## GitEye
