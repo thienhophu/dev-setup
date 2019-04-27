@@ -1,5 +1,22 @@
 # Ubuntu 18.04 LTS
 
+## Post Install
+```
+sudo apt-get autoremove
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+## Install Tools via Snap
+##### Visual Code
+```
+snap install code --classic
+```
+##### Gimp
+```
+snap install gimp
+```
+
 ## Curl
 #### install
 ```
@@ -147,6 +164,12 @@ valet park
 #### Change to HTTPS
 ```
 valet secure [folder]
+```
+##### If show Apache 2 It's Work
+```
+service apache2 stop
+valet restart
+valet park
 ```
 
 ## Laravel
