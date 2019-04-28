@@ -16,9 +16,14 @@ snap install code --classic
 ```
 snap install discord
 ```
+#### Skype
+```
+snap install skype --classic
+```
 #### Postman
 ```
-snap install postman
+snap install postman --channel-candidate
+(Other options)
 sudo snap switch --channel=candidate postman
 sudo snap refresh postman
 sudo apt-get install libgconf-2-4
@@ -240,10 +245,6 @@ sudo apt-get install --no-install-recommends yarn
 ##### Install with zsh
 ```
 curl -s "https://get.sdkman.io" | zsh
-```
-##### Run in new terminal
-```
-source "/home/thienho/.sdkman/bin/sdkman-init.sh"
 ```
 
 ## JAVA
