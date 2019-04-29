@@ -180,7 +180,7 @@ valet install
 ```
 valet park
 ```
-#### Change to HTTPS
+##### Change to HTTPS
 ```
 valet secure [folder]
 ```
@@ -189,6 +189,25 @@ valet secure [folder]
 service apache2 stop
 valet restart
 valet park
+```
+##### Enable/Disable Apache2
+```
+sudo update-rc.d apache2 disable
+sudo update-rc.d apache2 enable
+```
+
+## Xdebug
+##### Install
+```
+sudo apt install php-xdebug
+sudo apt-get install php-dev autoconf automake
+```
+##### Add to /etc/php/7.3/mods-available/xdebug.ini
+```
+zend_extension=xdebug.so
+; zend_extension=/usr/lib/php/20180731/xdebug.so
+xdebug.remote_autostart = 1
+xdebug.remote_enable = 1
 ```
 
 ## Laravel
@@ -345,7 +364,7 @@ sudo apt install fonts-firacode
 npm install --save-dev tslint-config-prettier
 ```
 ##### Add Prettier config to VSCODE by creating .prettierignore and .prettierrc
-###### .prettierignore
+##### .prettierignore
 ```
 node_modules
 ios
@@ -353,7 +372,7 @@ android
 .vscode
 package.json
 ```
-###### .prettierrc
+##### .prettierrc
 ```
 {
   "printWidth": 100,
@@ -376,7 +395,7 @@ package.json
 sudo apt  install --no-install-recommends gnome-panel
 gnome-desktop-item-edit ~/Desktop/ --create-new 
 ```
-###### Copy new launcher to Applications folder
+##### Copy new launcher to Applications folder
 ```
 .local/share/applications/
 ```
