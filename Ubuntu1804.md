@@ -399,3 +399,7 @@ gnome-desktop-item-edit ~/Desktop/ --create-new
 ```
 .local/share/applications/
 ```
+##### Edit Icon link (ex)
+```
+Icon[en_US]=/opt/GitEye/GitEye.png
+```
