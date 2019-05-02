@@ -142,7 +142,7 @@ sudo apt-get install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-in
 ```
 ##### Install 7.3
 ```
-sudo apt-get install -y php7.3
+sudo apt-get install php7.3
 ```
 ##### Related modules PHP7.3
 ```
@@ -154,9 +154,9 @@ sudo apt-get install php7.3-curl php7.3-gd php7.3-json php7.3-mbstring php7.3-in
 ```
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+rm composer-setup.php
 //curl -sS https://getcomposer.org/installer
 //sudo php -- --install-dir=/usr/local/bin --filename=composer 
-//rm composer-setup.php
 ```
 ##### Set own permission
 ```
@@ -204,8 +204,8 @@ sudo apt-get install php-dev autoconf automake
 ```
 ##### Add to /etc/php/7.3/mods-available/xdebug.ini
 ```
-zend_extension=xdebug.so
 ; zend_extension=/usr/lib/php/20180731/xdebug.so
+zend_extension=xdebug.so
 xdebug.remote_autostart = 1
 xdebug.remote_enable = 1
 ```
