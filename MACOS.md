@@ -211,6 +211,16 @@ brew install yarn
 ## Ruby
 
 ## Android Studio
+##### Install gradle via brew
+```
+brew install gradle
+```
+##### Add PATH
+```
+#THIS IS FOR ANDROID PATH
+export ANDROID_HOME=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+```
 
 ## Postman
 
