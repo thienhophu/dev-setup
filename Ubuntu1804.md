@@ -34,7 +34,7 @@ snap install vectr
 ```
 #### GitHub Desktop
 ```
-snap install github-desktop
+snap install github-desktop --beta --classic
 ```
 ##### Gimp
 ```
