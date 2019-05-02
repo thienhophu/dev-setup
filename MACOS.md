@@ -209,6 +209,14 @@ brew install yarn
 ```
 
 ## Ruby
+##### Install bundler
+```
+gem install bundler
+bundle install
+
+// Release
+bundle exec fastlane
+```
 
 ## Android Studio
 ##### Install gradle via brew
