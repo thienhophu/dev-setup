@@ -276,3 +276,8 @@ https://www.charlesproxy.com/
 ```
 https://github.com/100apps/charles-hacking
 ```
+
+## Fastlane
+```
+sudo gem install fastlane -NV
+```
