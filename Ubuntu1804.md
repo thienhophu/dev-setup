@@ -40,6 +40,16 @@ snap install github-desktop --beta --classic
 ```
 snap install gimp
 ```
+##### Android Studio
+```
+snap install android-studio --classic
+```
+##### Enable KVM
+```
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils libvirt-bin ubuntu-vm-builder
+sudo adduser $USER kvm
+sudo chown $USER /dev/kvm
+```
 
 ## Curl
 ```
