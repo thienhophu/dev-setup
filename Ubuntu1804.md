@@ -413,3 +413,14 @@ gnome-desktop-item-edit ~/Desktop/ --create-new
 ```
 Icon[en_US]=/opt/GitEye/GitEye.png
 ```
+
+### Change Night Light
+##### Install dconf-editor
+```
+sudo apt install dconf-editor
+```
+##### Navigate to
+```
+org/gnome/settings-daemon/plugins/color/night-light-temperature
+Fav: 5800
+```
