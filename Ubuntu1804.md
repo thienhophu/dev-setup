@@ -218,6 +218,9 @@ sudo apt-get install php-dev autoconf automake
 zend_extension=xdebug.so
 xdebug.remote_autostart = 1
 xdebug.remote_enable = 1
+xdebug.var_display_max_depth = 10
+xdebug.var_display_max_children = 256
+xdebug.var_display_max_data = 1024 
 ```
 
 ## Laravel
