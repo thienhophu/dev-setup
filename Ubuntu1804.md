@@ -144,7 +144,7 @@ sudo apt install php7.1-mysql php7.1-json php7.1-zip php7.1-cli php7.1-curl php7
 ```
 ##### Install 7.2
 ```
-sudo apt-get install php7.2 php7.2-cli php7.2-common
+sudo apt-get install php7.2 php7.2-cli php7.2-common php7.2-fpm
 ```
 ##### Related modules PHP7.2
 ```
