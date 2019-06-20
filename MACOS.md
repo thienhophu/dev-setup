@@ -364,3 +364,14 @@ https://github.com/100apps/charles-hacking
 ```
 sudo gem install fastlane -NV
 ```
+
+PostgreSQL
+```
+brew install postgresql
+// Init
+initdb /usr/local/var/postgres
+// Auto start on start up
+brew services start postgresql
+// Start each time required
+pg_ctl -D /usr/local/var/postgres start
+```
