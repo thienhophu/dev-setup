@@ -271,6 +271,10 @@ brew install yarn
 ```
 
 ## Ruby
+##### Install via brew
+```
+brew install ruby
+```
 
 ##### Install bundler
 
