@@ -37,6 +37,11 @@ brew install curl
 ```
 brew install git
 ```
+#### Config user infor
+```
+git config --global user.name "Thien Ho"
+git config --global user.email thien.ho@manifera.com
+```
 
 ## ZSH
 
