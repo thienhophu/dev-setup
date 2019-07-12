@@ -186,6 +186,11 @@ brew install php72
 ```
 brew install php
 ```
+## Add to your PATH
+```
+echo 'export PATH="/usr/local/opt/php@7.2/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
+```
 
 ## Composer
 
