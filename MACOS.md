@@ -177,8 +177,8 @@ brew install mysql
 ## PHP 7.2 (For Normal Dev)
 
 ```
-brew install php72
-
+brew install php@7.2
+brew link php@7.2 --force
 ```
 
 ## PHP 7.3 (For Adv.)
