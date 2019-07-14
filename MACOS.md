@@ -302,6 +302,8 @@ bundle exec fastlane
 
 ```
 brew install gradle
+or 
+sdk install gradle [version]
 ```
 
 ##### Add PATH
