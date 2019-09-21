@@ -6,4 +6,4 @@ This will contain all the developer setup for cross-platform desktop ( Windows, 
 - [MacOS](MACOS.md)
 - [Windows](WINDOWS.md)
 
-If you want to maintain this repos. Please make a pull request to me.
+IF YOU WANT TO MAINTAIN THIS REPOS. PLEASE MAKE A PULL REQUEST TO ME.
