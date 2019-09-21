@@ -22,7 +22,7 @@ snap install skype --classic
 ```
 #### Postman
 ```
-snap install postman --channel-candidate
+snap install postman --channel=candidate
 (Other options)
 sudo snap switch --channel=candidate postman
 sudo snap refresh postman
