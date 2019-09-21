@@ -5,3 +5,5 @@ This will contain all the developer setup for cross-platform desktop ( Windows, 
 - [Ubuntu 19.04](Ubuntu1904.md)
 - [MacOS](MACOS.md)
 - [Windows](WINDOWS.md)
+
+If you want to maintain this repos. Please make a pull request to me.
