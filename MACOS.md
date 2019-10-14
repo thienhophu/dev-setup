@@ -131,14 +131,8 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 ##### Install via SDKMan
 
 ```
-sdk install java 8.0.202-zulu
+sdk install java 8.0.222-zulu
 ```
-
-## SourceTree
-
-## GitFork
-
-## GitEye
 
 ## MySQL 5.7 (For Normal Dev)
 
