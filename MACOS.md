@@ -256,7 +256,7 @@ xdebug.remote_autostart=1
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | zsh
 ```
 
 ## Node
