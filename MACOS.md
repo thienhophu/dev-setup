@@ -344,7 +344,7 @@ curl -sL https://sentry.io/get-cli/ | bash
 ##### Install font
 
 ```
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 ```
 
