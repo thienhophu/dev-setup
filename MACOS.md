@@ -37,7 +37,9 @@ brew install curl
 ```
 brew install git
 ```
+
 #### Config user infor
+
 ```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
@@ -161,7 +163,9 @@ brew link php@7.2 --force
 ```
 brew install php
 ```
+
 ## Add to your PATH
+
 ```
 echo 'export PATH="/usr/local/opt/php@7.2/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
@@ -256,7 +260,9 @@ brew install yarn
 ```
 
 ## Ruby
+
 ##### Install via brew
+
 ```
 brew install ruby
 ```
@@ -277,7 +283,7 @@ bundle exec fastlane
 
 ```
 brew install gradle
-or 
+or
 sdk install gradle [version]
 ```
 
@@ -325,6 +331,7 @@ sudo gem install fastlane -NV
 ```
 
 PostgreSQL
+
 ```
 brew install postgresql
 // Init
@@ -387,3 +394,10 @@ https://www.charlesproxy.com/
 ```
 https://github.com/100apps/charles-hacking
 ```
+
+### Thunderbird
+
+Note: To convert plain text email to html email, go to Preferences->Composition->Send Options
+
+- Uncheck 'Send messages as plain text if possible
+- Select 'Send the message in HTML anyway
