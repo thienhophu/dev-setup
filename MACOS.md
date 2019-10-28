@@ -79,25 +79,6 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-## VSCODE
-
-##### Install from https://code.visualstudio.com/
-
-## Hyper.js
-
-##### Install via Homebrew
-
-```
-brew update
-brew cask install hyper
-```
-
-##### Set ZSH as default shell
-
-```
-shell: 'zsh'
-```
-
 ## Cocoapods
 
 ```
@@ -337,38 +318,6 @@ sudo code /etc/shells
 curl -sL https://sentry.io/get-cli/ | bash
 ```
 
-## VSCODE -- Extension
-
-#### Fira Code -- Font
-
-##### Install font
-
-```
-brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-```
-
-##### Add to vscode
-
-```
-"editor.fontFamily": "Fira Code",
-"editor.fontLigatures": true,
-```
-
-## Charles
-
-##### Install from offical page
-
-```
-https://www.charlesproxy.com/
-```
-
-##### Charles Hacking
-
-```
-https://github.com/100apps/charles-hacking
-```
-
 ## Fastlane
 
 ```
@@ -384,4 +333,57 @@ initdb /usr/local/var/postgres
 brew services start postgresql
 // Start each time required
 pg_ctl -D /usr/local/var/postgres start
+```
+
+# TOOLS
+
+## VSCODE
+
+##### Install from https://code.visualstudio.com/
+
+#### VSCODE -- Extension
+
+##### Fira Code -- Font
+
+###### Install font
+
+```
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+```
+
+###### Add to vscode
+
+```
+"editor.fontFamily": "Fira Code",
+"editor.fontLigatures": true,
+```
+
+### Hyper.js
+
+##### Install via Homebrew
+
+```
+brew update
+brew cask install hyper
+```
+
+##### Set ZSH as default shell
+
+```
+shell: 'zsh'
+```
+
+### Charles
+
+##### Install from offical page
+
+```
+https://www.charlesproxy.com/
+```
+
+##### Charles Hacking
+
+```
+https://github.com/100apps/charles-hacking
 ```
