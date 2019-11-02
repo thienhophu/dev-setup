@@ -8,6 +8,16 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
+## Disable SIP
+
+```
+Restart
+CMD + R while Boot
+Open terminal
+
+csrutil disable
+```
+
 ## Homebrew
 
 ##### Install
@@ -37,7 +47,9 @@ brew install curl
 ```
 brew install git
 ```
+
 #### Config user infor
+
 ```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
@@ -180,7 +192,9 @@ brew link php@7.2 --force
 ```
 brew install php
 ```
+
 ## Add to your PATH
+
 ```
 echo 'export PATH="/usr/local/opt/php@7.2/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
@@ -275,7 +289,9 @@ brew install yarn
 ```
 
 ## Ruby
+
 ##### Install via brew
+
 ```
 brew install ruby
 ```
@@ -296,7 +312,7 @@ bundle exec fastlane
 
 ```
 brew install gradle
-or 
+or
 sdk install gradle [version]
 ```
 
@@ -376,6 +392,7 @@ sudo gem install fastlane -NV
 ```
 
 PostgreSQL
+
 ```
 brew install postgresql
 // Init
