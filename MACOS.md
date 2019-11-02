@@ -15,7 +15,12 @@ Restart
 CMD + R while Boot
 Open terminal
 
+// Disable
 csrutil disable
+
+// Enable
+csrutil clear
+csrutil enable
 ```
 
 ## Homebrew
