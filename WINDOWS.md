@@ -110,3 +110,8 @@ choco install firacode
 ```
 ssh-keygen -t rsa
 ```
+
+##### Check connection
+```
+ssh git@gitlab.com
+```
