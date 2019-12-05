@@ -8,6 +8,21 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
+## Disable SIP
+
+```
+Restart
+CMD + R while Boot
+Open terminal
+
+// Disable
+csrutil disable
+
+// Enable
+csrutil clear
+csrutil enable
+```
+
 ## Homebrew
 
 ##### Install
@@ -172,7 +187,9 @@ echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
 ```
 
 ## PHP Extensions
+
 ### Imagemagick
+
 ```
 brew install imagemagick
 brew install pkg-config
@@ -196,6 +213,7 @@ echo $PATH
 ```
 
 ##### Composer parallel
+
 ```
 composer global require hirak/prestissimo
 ```
@@ -253,6 +271,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | zsh
 ```
 
 ##### Install auto use
+
 ```
 # place this after nvm initialization!
 autoload -U add-zsh-hook
@@ -327,7 +346,6 @@ sdk install gradle [version]
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ```
-
 
 ## Sentry CLI
 
