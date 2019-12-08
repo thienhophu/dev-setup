@@ -105,13 +105,24 @@ https://mlocati.github.io/articles/php-windows-imagick.html
 choco install firacode
 ```
 
-
 ## SSH Keys
+
 ```
 ssh-keygen -t rsa
 ```
 
 ##### Check connection
+
 ```
 ssh git@gitlab.com
+```
+
+## MYSQL 5.7 (DOCKER)
+
+##### Install via Docker
+
+```
+docker pull mysql:5.7.28
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql:5.7.28
+
 ```
