@@ -430,3 +430,9 @@ Note: To convert plain text email to html email, go to Preferences->Composition-
 
 - Uncheck 'Send messages as plain text if possible
 - Select 'Send the message in HTML anyway
+
+### Chrome Debugger VSCODE - Attach
+
+```
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+```

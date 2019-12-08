@@ -105,13 +105,20 @@ https://mlocati.github.io/articles/php-windows-imagick.html
 choco install firacode
 ```
 
-
 ## SSH Keys
+
 ```
 ssh-keygen -t rsa
 ```
 
 ##### Check connection
+
 ```
 ssh git@gitlab.com
+```
+
+### Chrome Debugger VSCODE - Attach
+
+```
+--remote-debugging-port=9222
 ```

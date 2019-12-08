@@ -427,3 +427,9 @@ sudo apt install dconf-editor
 org/gnome/settings-daemon/plugins/color/night-light-temperature
 Fav: 5800
 ```
+
+### Chrome Debugger VSCODE - Attach
+
+```
+google-chrome --remote-debugging-port=9222
+```

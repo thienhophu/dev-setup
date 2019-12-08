@@ -26,3 +26,9 @@ createuser postgres -s
 createuser -s -U \$USER
 
 docker exec -it yournamecontainer psql -U postgres
+
+## MySQL
+
+```
+docker exec -it mysql mysql -u root -p
+```
