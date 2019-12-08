@@ -8,6 +8,21 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
+## Disable SIP
+
+```
+Restart
+CMD + R while Boot
+Open terminal
+
+// Disable
+csrutil disable
+
+// Enable
+csrutil clear
+csrutil enable
+```
+
 ## Homebrew
 
 ##### Install
@@ -171,6 +186,16 @@ echo 'export PATH="/usr/local/opt/php@7.2/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
 ```
 
+## PHP Extensions
+
+### Imagemagick
+
+```
+brew install imagemagick
+brew install pkg-config
+pecl install imagick
+```
+
 ## Composer
 
 ##### Install via Brew
@@ -185,6 +210,12 @@ brew install composer
 echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
+```
+
+##### Composer parallel
+
+```
+composer global require hirak/prestissimo
 ```
 
 ## Valet
@@ -230,18 +261,39 @@ xdebug.remote_autostart=1
 }
 ```
 
-## Laravel
-
-## Essential Build Package
-
-## Python 2.7
-
 ## NVM
 
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | zsh
+brew install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | zsh
+```
+
+##### Install auto use
+
+```
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
 ```
 
 ## Node
@@ -293,29 +345,6 @@ sdk install gradle [version]
 #THIS IS FOR ANDROID PATH
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-```
-
-## Postman
-
-##
-
-## Upgrading Bash
-
-##### Install Bash with Brew
-
-```
-brew install bash
-// Restart terminal
-```
-
-##### Whitelist Bash
-
-```
-sudo code /etc/shells
-// Add this to the end of the file
-/usr/local/bin/bash
-// Run sheband line
-#!/usr/bin/env bash
 ```
 
 ## Sentry CLI
