@@ -1,6 +1,6 @@
 # POP_OS (UBUNTU Distro)
 
-## Use this document at your own risk.
+## Use this document at your own risk. =))
 
 ## Essential Apps
 
