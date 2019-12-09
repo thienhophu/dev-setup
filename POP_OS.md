@@ -13,3 +13,9 @@ sudo apt install snapd
 ```
 snap install code --classic
 ```
+
+### Skype
+```
+snap install skype --classic
+```
+
