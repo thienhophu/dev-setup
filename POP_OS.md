@@ -19,3 +19,7 @@ snap install code --classic
 snap install skype --classic
 ```
 
+### Postman
+```
+snap install postman
+```
