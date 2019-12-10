@@ -36,5 +36,14 @@ git config --global user.email thien.hophu@gmail.com
 ```
 sudo apt-get install zsh
 ```
+### Oh My Zsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
-
+### SSH Key
+```
+ssh-keygen
+//(without using passpharse for dev)
+cat ~/.ssh/id_rsa.pub
+```
