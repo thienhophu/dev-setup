@@ -23,3 +23,18 @@ snap install skype --classic
 ```
 snap install postman
 ```
+
+## Dev setup
+
+### Git
+```
+git config --global user.name "Thien Ho"
+git config --global user.email thien.hophu@gmail.com
+```
+
+### ZSH
+```
+sudo apt-get install zsh
+```
+
+
