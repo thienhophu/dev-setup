@@ -97,6 +97,11 @@ source ~/.zshrc
 echo $PATH
 ```
 
+#### Composer Libaries
+```
+composer global require hirak/prestissimo
+```
+
 ## Valet
 
 ```
