@@ -127,3 +127,10 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
+
+## Flash for Firefox
+```
+sudo apt install ubuntu-restricted-extras
+sudo apt-add-repository multiverse && sudo apt update
+sudo apt install flashplugin-installer
+```
