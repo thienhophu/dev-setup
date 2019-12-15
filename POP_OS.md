@@ -18,8 +18,11 @@ snap install code --classic
 
 ### Skype
 
+##### For using Unikey, pls download .deb setup from Skype.com
+
 ```
 snap install skype --classic
+
 ```
 
 ### Postman
@@ -98,6 +101,7 @@ echo $PATH
 ```
 
 #### Composer Libaries
+
 ```
 composer global require hirak/prestissimo
 ```
@@ -113,14 +117,16 @@ service apache2 stop
 valet restart
 ```
 
-## NVM
+### NVM
+
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | zsh
 nvm install 10
 npm install -g avn avn-nvm avn-n
 ```
 
-## Yarn
+### Yarn
+
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -128,9 +134,35 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
-## Flash for Firefox
+### GitEye
+
+##### Copy to content
+
+```
+sudo chown -R root:root GitEye
+sudo cp -r GitEye /opt/GitEye
+```
+
+##### Open GitEye in terminal (Note: It will keep running GitEye on that tab).
+
+```
+sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
+```
+
+## Customize OS
+
+### Flash for Firefox
+
 ```
 sudo apt install ubuntu-restricted-extras
 sudo apt-add-repository multiverse && sudo apt update
 sudo apt install flashplugin-installer
+```
+
+### GRUB Customizer
+
+```
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
 ```
