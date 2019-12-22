@@ -74,11 +74,12 @@ Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProt
 # PHP 7.2
 Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/cretueusebiu/valet-windows/raw/master/bin/php72.ps1" -OutFile $env:temp\php72.ps1; ."$env:temp\php72.ps1"
 
-```
+# PHP 7.3
+Set-ExecutionPolicy RemoteSigned; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12; Invoke-WebRequest -Uri "https://github.com/cretueusebiu/valet-windows/raw/master/bin/php73.ps1" -OutFile $env:temp\php73.ps1; .$env:temp\php73.ps1
 
 ```
-git@github.com:thienhophu/dev-setup.git
-```
+
+#### Composer
 
 https://getcomposer.org/Composer-Setup.exe
 
