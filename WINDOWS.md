@@ -3,7 +3,6 @@
 ## Uninstall unused packages
 
 ```
-Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 Get-AppxPackage *alarm* | Remove-AppxPackage
 Get-AppxPackage *zune* | Remove-AppxPackage
 Get-AppxPackage *people* | Remove-AppxPackage
@@ -17,6 +16,9 @@ Get-AppxPackage *yourphone* | Remove-AppxPackage
 Get-AppxPackage *xbox* | Remove-AppxPackage
 Get-AppxPackage *3dviewer* | Remove-AppxPackage
 Get-AppxPackage *portal* | Remove-AppxPackage
+
+// Don't remove this if install for work
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 ```
 
 ## Hyper.js
