@@ -145,4 +145,5 @@ choco install git
 cd ~/.
 mkdir .ssh
 ssh-keygen.exe
+cat ~/.ssh/id_rsa.pub
 ```
