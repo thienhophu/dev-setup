@@ -133,3 +133,16 @@ docker pull mysql:5.7.28
 docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=1234 -d mysql:5.7.28
 
 ```
+
+## Git
+```
+choco install git
+```
+
+## SSH Key
+#### Using Git Bash
+```
+cd ~/.
+mkdir .ssh
+ssh-keygen.exe
+```
