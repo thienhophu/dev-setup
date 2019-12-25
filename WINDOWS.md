@@ -155,3 +155,29 @@ mkdir .ssh
 ssh-keygen.exe
 cat ~/.ssh/id_rsa.pub
 ```
+
+## NVM
+
+```
+choco install nvm
+```
+
+## Yarn
+
+```
+choco install yarn
+```
+
+## MYSQL 8.0
+
+```
+choco install mysql
+mysql_secure_installation
+(N Y Y Y Y)
+```
+
+## CMDER
+
+```
+choco install cmder
+```
