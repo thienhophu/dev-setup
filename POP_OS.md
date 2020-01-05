@@ -65,7 +65,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 sudo apt install mysql-server
 sudo systemctl status mysql
-sudo mysql_secure_installation
+
 sudo mysql_secure_installation
 // no validate password
 // y y y y
