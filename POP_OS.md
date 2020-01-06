@@ -120,8 +120,8 @@ valet restart
 ### NVM
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | zsh
-nvm install 10
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | zsh
+nvm install 13
 npm install -g avn avn-nvm avn-n
 ```
 
