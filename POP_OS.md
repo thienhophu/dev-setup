@@ -197,3 +197,10 @@ sudo apt-get install grub-customizer
 sudo apt install -y os-prober
 sudo os-prober
 ```
+
+### K2
+```
+cd /etc/modprobe.d && sudo touch hid_apple.conf
+echo options hid_apple fnmode=2 > /etc/modprobe.d/hid_apple.conf
+sudo update-initramfs -u && reboot
+```
