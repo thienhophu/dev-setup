@@ -194,6 +194,6 @@ sudo apt-get install grub-customizer
 ```
 ##### Detech other OS
 ```
-sudo apt install os-prober
+sudo apt install -y os-prober
 sudo os-prober
 ```
