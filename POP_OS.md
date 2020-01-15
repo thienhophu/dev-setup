@@ -204,3 +204,9 @@ cd /etc/modprobe.d && sudo touch hid_apple.conf
 echo options hid_apple fnmode=2 > /etc/modprobe.d/hid_apple.conf
 sudo update-initramfs -u && reboot
 ```
+
+### Unikey
+- Install Language Vietname -> Logout
+- Add Input Vietname - Unikey
+- Change Option to VNI -> Logout
+
