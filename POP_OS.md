@@ -192,13 +192,16 @@ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt-get update
 sudo apt-get install grub-customizer
 ```
+
 ##### Detech other OS
+
 ```
 sudo apt install -y os-prober
 sudo os-prober
 ```
 
 ### K2
+
 ```
 cd /etc/modprobe.d && sudo touch hid_apple.conf
 echo options hid_apple fnmode=2 > /etc/modprobe.d/hid_apple.conf
@@ -206,7 +209,27 @@ sudo update-initramfs -u && reboot
 ```
 
 ### Unikey
+
 - Install Language Vietname -> Logout
 - Add Input Vietname - Unikey
 - Change Option to VNI -> Logout
 
+### Postgres SQL
+
+```
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+RELEASE=$(lsb_release -cs)
+echo "deb http://apt.postgresql.org/pub/repos/apt/ ${RELEASE}"-pgdg main | sudo tee  /etc/apt/sources.list.d/pgdg.list
+
+cat /etc/apt/sources.list.d/pgdg.list
+// deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main
+
+sudo apt update
+sudo apt -y install postgresql-11
+
+sudo systemctl restart postgresql
+
+sudo su - postgres
+psql -c "alter user postgres with password 'StrongPassword'"
+```
