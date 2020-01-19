@@ -209,8 +209,10 @@ sudo update-initramfs -u && reboot
 ```
 
 ### Unikey
-
-- Install Language Vietname -> Logout
+- Remove all Office App
+- Update from Pop shop
+- install all default language pack
+- Install Language Vietnam and english only -> Logout
 - Add Input Vietname - Unikey
 - Change Option to VNI -> Logout
 
