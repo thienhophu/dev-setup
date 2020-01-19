@@ -240,3 +240,11 @@ wget "https://download.docker.com/linux/ubuntu/dists/disco/pool/stable/amd64/doc
 sudo dpkg -i "containerd.io_1.2.6-3_amd64.deb"
 sudo dpkg -i "docker-ce-cli_19.03.3~3-0~ubuntu-disco_amd64.deb"
 sudo dpkg -i "docker-ce_19.03.3~3-0~ubuntu-disco_amd64.deb"
+
+### Linux Timeshift
+
+```
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift
+```
