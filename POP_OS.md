@@ -2,6 +2,13 @@
 
 ## Use this document at your own risk. =))
 
+## Upgrade APT
+
+```
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+```
+
 ## Essential Apps
 
 ### Snap
@@ -208,6 +215,7 @@ sudo update-initramfs -u && reboot
 ```
 
 ### Unikey
+
 - Remove all Office App
 - Update from Pop shop - Logout
 - install all default language pack
@@ -248,4 +256,31 @@ sudo dpkg -i "docker-ce_19.03.3~3-0~ubuntu-disco_amd64.deb"
 sudo apt-add-repository -y ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install timeshift
+```
+
+### Docker
+
+```
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+```
+
+#### Install using Deb file
+
+```
+wget "https://download.docker.com/linux/ubuntu/dists/disco/pool/stable/amd64/containerd.io_1.2.6-3_amd64.deb"
+wget "https://download.docker.com/linux/ubuntu/dists/disco/pool/stable/amd64/docker-ce-cli_19.03.3~3-0~ubuntu-disco_amd64.deb"
+wget "https://download.docker.com/linux/ubuntu/dists/disco/pool/stable/amd64/docker-ce_19.03.3~3-0~ubuntu-disco_amd64.deb"
+
+sudo dpkg -i "containerd.io_1.2.6-3_amd64.deb"
+sudo dpkg -i "docker-ce-cli_19.03.3~3-0~ubuntu-disco_amd64.deb"
+sudo dpkg -i "docker-ce_19.03.3~3-0~ubuntu-disco_amd64.deb"
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+// logout
+newgrp docker
 ```
