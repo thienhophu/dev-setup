@@ -112,12 +112,18 @@ choco install firacode
 
 ```
 ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
 ```
 
 ##### Check connection
 
 ```
 ssh git@gitlab.com
+```
+
+```
+git config --global user.name "Thien Ho"
+git config --global user.email thien.hophu@gmail.com
 ```
 
 ### Chrome Debugger VSCODE - Attach
