@@ -284,3 +284,17 @@ sudo usermod -aG docker $USER
 // logout
 newgrp docker
 ```
+
+##### Android Studio
+
+```
+snap install android-studio --classic
+```
+
+### KVM
+
+```
+sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
+sudo adduser $USER kvm
+sudo chown $USER /dev/kvm
+```
