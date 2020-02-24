@@ -166,6 +166,39 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
+### JAVA
+
+##### Install OpenJDK
+
+```
+sudo apt install default-jdk
+```
+
+##### Add to .zshrc
+
+```
+# ANDROID
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+### Android Studio
+
+```
+snap install android-studio --classic
+```
+
+### KVM
+
+```
+sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
+sudo adduser $USER kvm
+sudo chown $USER /dev/kvm
+```
+
 ### GitEye
 
 ##### Copy to content
@@ -283,18 +316,4 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 // logout
 newgrp docker
-```
-
-##### Android Studio
-
-```
-snap install android-studio --classic
-```
-
-### KVM
-
-```
-sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
-sudo adduser $USER kvm
-sudo chown $USER /dev/kvm
 ```
