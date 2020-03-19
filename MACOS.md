@@ -360,7 +360,13 @@ curl -sL https://sentry.io/get-cli/ | bash
 sudo gem install fastlane -NV
 ```
 
-PostgreSQL
+## React Native Debugger
+
+```
+brew cask install react-native-debugger
+```
+
+## PostgreSQL
 
 ```
 brew install postgresql
