@@ -84,8 +84,19 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 ##### Install zsh-autosuggestions
 
+##### Clone and add to zsh
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+plugins=(zsh-autosuggestions)
+```
+
+##### Install via Brew
+
 ```
 brew install zsh-autosuggestions
+// Add this to zshrc
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
@@ -126,6 +137,13 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
 ## Java
+
+##### Brew (One version only)
+
+```
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk8
+```
 
 ##### Install via SDKMan
 
@@ -267,8 +285,7 @@ xdebug.remote_autostart=1
 ##### Install via Curl
 
 ```
-brew install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 ```
 
 ##### Install auto use
