@@ -368,7 +368,7 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 ## Sentry CLI
 
 ```
-curl -sL https://sentry.io/get-cli/ | bash
+curl -sL https://sentry.io/get-cli/ | zsh
 ```
 
 ## Fastlane
