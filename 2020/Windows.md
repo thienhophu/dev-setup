@@ -33,3 +33,17 @@ cat ~/.ssh/id_rsa.pub
 ```
 shell: 'C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe',
 ```
+
+## Chocolatey
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+## React Native Section
+
+### Libraries
+
+```
+choco install -y nodejs.install python2 jdk8 yarn
+```
