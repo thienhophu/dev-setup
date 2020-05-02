@@ -9,6 +9,7 @@ sudo apt upgrade
 ```
 
 ## Upgrade APT
+
 ```
 sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
@@ -22,14 +23,14 @@ sudo chown $USER /dev/kvm
 ```
 
 ## Skype
+
 Download from https://www.skype.com
 
-#### Discord
+## Discord
 
 ```
 snap install discord
 ```
-
 
 ## Postman
 
@@ -37,22 +38,23 @@ snap install discord
 snap install postman
 ```
 
-
-##### Gimp
+## Gimp
 
 ```
 snap install gimp
+```
+
+## Sayonara Player
+
+```
+snap install sayonara
 ```
 
 ## Git
 
 ```
 sudo apt install git
-```
 
-### Config user info
-
-```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.ho@manifera.com
 ```
@@ -75,4 +77,26 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ssh-keygen
 //(without using passpharse for dev)
 cat ~/.ssh/id_rsa.pub
+```
+
+## NVM (check update before install)
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+```
+
+## Yarn
+
+##### add repo
+
+```
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+##### update and install
+
+```
+sudo apt update
+sudo apt install --no-install-recommends yarn
 ```
