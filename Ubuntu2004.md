@@ -22,6 +22,14 @@ sudo adduser $USER kvm
 sudo chown $USER /dev/kvm
 ```
 
+## Linux Timeshift
+
+```
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt update
+sudo apt install timeshift
+```
+
 ## Skype
 
 Download from https://www.skype.com
@@ -87,16 +95,37 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 
 ## Yarn
 
-##### add repo
-
 ```
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
 
-##### update and install
-
-```
 sudo apt update
 sudo apt install --no-install-recommends yarn
+```
+
+## JAVA
+
+```
+sudo apt install default-jdk
+```
+
+## Android Studio
+
+```
+snap install android-studio --classic
+```
+
+## GRUB Customizer
+
+```
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt update
+sudo apt install grub-customizer
+```
+
+## Detech other OS
+
+```
+sudo apt install -y os-prober
+sudo os-prober
 ```
