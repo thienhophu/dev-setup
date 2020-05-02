@@ -8,7 +8,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
-##### Enable KVM
+## Upgrade APT
+```
+sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+```
+
+## Enable KVM
 
 ```
 sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
@@ -37,4 +42,29 @@ snap install postman
 
 ```
 snap install gimp
+```
+
+## Git
+
+```
+sudo apt install git
+```
+
+### Config user info
+
+```
+git config --global user.name "Thien Ho"
+git config --global user.email thien.ho@manifera.com
+```
+
+## Zsh
+
+```
+sudo apt install zsh
+```
+
+## Oh My Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
