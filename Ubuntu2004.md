@@ -129,3 +129,11 @@ sudo apt install grub-customizer
 sudo apt install -y os-prober
 sudo os-prober
 ```
+
+## BootLoader Repair
+```
+sudo apt-add-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair
+boot-repair
+```
