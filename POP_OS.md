@@ -41,7 +41,7 @@ sudo apt update
 sudo apt install grub-customizer
 ```
 
-##### Detech other OS
+### Detech other OS
 
 ```
 sudo apt install os-prober
@@ -142,9 +142,7 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
-### JAVA
-
-##### Install OpenJDK
+### JAVA (OpenJDK)
 
 ```
 sudo apt install default-jdk
@@ -154,11 +152,9 @@ sudo apt install default-jdk
 
 ```
 snap install android-studio --classic
-```
 
-##### Add to .zshrc
+//Add to .zshrc
 
-```
 # ANDROID
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
