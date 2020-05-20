@@ -6,7 +6,7 @@ This will contain all the developer setup for cross-platform desktop ( Windows, 
 - [Ubuntu 19.04](Ubuntu1904.md)
 - [Ubuntu 20.04](Ubuntu2004.md)
 - [PopOS](POP_OS.md)
-- [PopOS 20.04](POP_OS 20.04.md) (Beta)
+- [PopOS 20.04 (Beta)](POP_OS_20.04.md)
 - [MacOS](MACOS.md)
 - [Windows](WINDOWS.md)
 
