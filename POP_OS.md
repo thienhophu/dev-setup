@@ -48,6 +48,12 @@ sudo apt install os-prober
 sudo os-prober
 ```
 
+## Sayonara Player
+
+```
+snap install sayonara
+```
+
 ### VSCODE
 
 ```
