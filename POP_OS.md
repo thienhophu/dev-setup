@@ -5,8 +5,8 @@
 ## Upgrade APT
 
 ```
-sudo apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+sudo apt update
+sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 ```
 
 ## Essential Apps
@@ -15,6 +15,29 @@ sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent sof
 
 ```
 sudo apt install snapd
+```
+
+### Linux Timeshift
+
+```
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt update
+sudo apt install timeshift
+```
+
+### GRUB Customizer
+
+```
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt update
+sudo apt install grub-customizer
+```
+
+##### Detech other OS
+
+```
+sudo apt install os-prober
+sudo os-prober
 ```
 
 ### VSCODE
@@ -27,18 +50,11 @@ snap install code --classic
 
 ##### For using Unikey, pls download .deb setup from Skype.com
 
-```
-snap install skype --classic
-
-```
-
 ### Postman
 
 ```
 snap install postman
 ```
-
-## Dev setup
 
 ### Git
 
@@ -50,13 +66,22 @@ git config --global user.email thien.hophu@gmail.com
 ### ZSH
 
 ```
-sudo apt-get install zsh
+sudo apt install zsh
 ```
 
 ### Oh My Zsh
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+### Zsh Autosuggestions
+
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+//Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+//plugins=(zsh-autosuggestions)
 ```
 
 ### SSH Key
@@ -67,68 +92,11 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-### MYSQL - Server
-
-```
-sudo apt install mysql-server
-sudo systemctl status mysql
-
-sudo mysql_secure_installation
-// no validate password
-// y y y y
-sudo mysql -u root -p
-
-// sql command
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
-FLUSH PRIVILEGES;
-exit;
-
-mysql -u root -p
-```
-
-### PHP
-
-```
-sudo add-apt-repository ppa:ondrej/php
-sudo apt-get update
-sudo apt-get install -y php7.3
-sudo apt-get install -y php7.3-curl php7.3-gd php7.3-json php7.3-mbstring php7.3-intl php7.3-mysql php7.3-xml php7.3-zip php7.3-bcmath php7.3-fpm php-imagick
-```
-
-### Composer
-
-```
-curl -sS https://getcomposer.org/installer -o composer-setup.php
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-rm composer-setup.php
-echo 'export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH' >> ~/.zshrc
-source ~/.zshrc
-echo $PATH
-```
-
-#### Composer Libaries
-
-```
-composer global require hirak/prestissimo
-```
-
-## Valet
-
-```
-sudo apt-get install network-manager jq xsel libnss3-tools
-composer global require cpriego/valet-linux
-valet install
-valet park
-service apache2 stop
-valet restart
-```
-
 ### NVM
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | zsh
-nvm install 13
-npm install -g avn avn-nvm avn-n
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+nvm install 14
 ```
 
 ##### Auto Detect and install in source file (zshrc, bash_profile,...) (alternative is avn, which only switch node)
@@ -174,6 +142,12 @@ sudo apt install --no-install-recommends yarn
 sudo apt install default-jdk
 ```
 
+### Android Studio
+
+```
+snap install android-studio --classic
+```
+
 ##### Add to .zshrc
 
 ```
@@ -185,18 +159,68 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-### Android Studio
-
-```
-snap install android-studio --classic
-```
-
 ### KVM
 
 ```
 sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
 sudo adduser $USER kvm
 sudo chown $USER /dev/kvm
+```
+
+### MYSQL - Server
+
+```
+sudo apt install mysql-server
+sudo systemctl status mysql
+
+sudo mysql_secure_installation
+// no validate password
+// y y y y
+sudo mysql -u root -p
+
+// sql command
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+FLUSH PRIVILEGES;
+exit;
+
+mysql -u root -p
+```
+
+### PHP
+
+```
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install -y php7.3
+sudo apt install -y php7.3-curl php7.3-gd php7.3-json php7.3-mbstring php7.3-intl php7.3-mysql php7.3-xml php7.3-zip php7.3-bcmath php7.3-fpm php-imagick
+```
+
+### Composer
+
+```
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+rm composer-setup.php
+echo 'export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+echo $PATH
+```
+
+#### Composer Libaries
+
+```
+composer global require hirak/prestissimo
+```
+
+## Valet
+
+```
+sudo apt install network-manager jq xsel libnss3-tools
+composer global require cpriego/valet-linux
+valet install
+valet park
+service apache2 stop
+valet restart
 ```
 
 ### GitEye
@@ -224,26 +248,12 @@ sudo apt-add-repository multiverse && sudo apt update
 sudo apt install flashplugin-installer
 ```
 
-### GRUB Customizer
-
-```
-sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-sudo apt-get update
-sudo apt-get install grub-customizer
-```
-
-##### Detech other OS
-
-```
-sudo apt install -y os-prober
-sudo os-prober
-```
-
 ### K2
 
 ```
 cd /etc/modprobe.d && sudo touch hid_apple.conf
-echo options hid_apple fnmode=2 > /etc/modprobe.d/hid_apple.conf
+code hid_apple.conf
+options hid_apple fnmode=2
 sudo update-initramfs -u && reboot
 ```
 
@@ -283,21 +293,13 @@ sudo dpkg -i "containerd.io_1.2.6-3_amd64.deb"
 sudo dpkg -i "docker-ce-cli_19.03.3~3-0~ubuntu-disco_amd64.deb"
 sudo dpkg -i "docker-ce_19.03.3~3-0~ubuntu-disco_amd64.deb"
 
-### Linux Timeshift
-
-```
-sudo apt-add-repository -y ppa:teejee2008/ppa
-sudo apt-get update
-sudo apt-get install timeshift
-```
-
 ### Docker
 
 ```
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
 
 ```
 
