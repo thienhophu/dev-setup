@@ -17,6 +17,14 @@ sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent softwar
 sudo apt install snapd
 ```
 
+### KVM
+
+```
+sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
+sudo adduser $USER kvm
+sudo chown $USER /dev/kvm
+```
+
 ### Linux Timeshift
 
 ```
@@ -157,14 +165,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
-
-### KVM
-
-```
-sudo apt install qemu-kvm libvirt-daemon-system bridge-utils
-sudo adduser $USER kvm
-sudo chown $USER /dev/kvm
 ```
 
 ### MYSQL - Server
