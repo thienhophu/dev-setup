@@ -64,13 +64,6 @@ snap install code --classic
 snap install postman
 ```
 
-### Git
-
-```
-git config --global user.name "Thien Ho"
-git config --global user.email thien.hophu@gmail.com
-```
-
 ### ZSH
 
 ```
@@ -98,6 +91,18 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ssh-keygen
 //(without using passpharse for dev)
 cat ~/.ssh/id_rsa.pub
+```
+
+### Homebrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+### Git
+
+```
+git config --global user.name "Thien Ho"
+git config --global user.email thien.hophu@gmail.com
 ```
 
 ### NVM
