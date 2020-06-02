@@ -151,6 +151,13 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
+### SDKMAN (Java Version Manager)
+```
+curl -s "https://get.sdkman.io" | zsh
+
+sdk install java 8.0.252.hs-adpt
+```
+
 ### JAVA (OpenJDK)
 
 ```
