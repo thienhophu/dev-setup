@@ -96,6 +96,10 @@ cat ~/.ssh/id_rsa.pub
 ### Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+// ~/.zshrc
+# Homebrew
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 ```
 
 ### Git
