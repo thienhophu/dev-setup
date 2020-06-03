@@ -156,6 +156,10 @@ sudo apt install --no-install-recommends yarn
 curl -s "https://get.sdkman.io" | zsh
 
 sdk install java 8.0.252.hs-adpt
+
+#THIS IS FOR JAVA PATH
+export PATH=${PATH}:${JAVA_HOME}/bin
+export JAVA_HOME
 ```
 
 ### JAVA (OpenJDK)
