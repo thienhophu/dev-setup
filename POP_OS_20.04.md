@@ -94,6 +94,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ### Homebrew
+
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
@@ -152,6 +153,7 @@ sudo apt install --no-install-recommends yarn
 ```
 
 ### SDKMAN (Java Version Manager)
+
 ```
 curl -s "https://get.sdkman.io" | zsh
 
@@ -217,6 +219,7 @@ sudo apt install -y php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-int
 curl -sS https://getcomposer.org/installer -o composer-setup.php
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 rm composer-setup.php
+sudo chown -R $USER $HOME/.composer
 echo 'export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
