@@ -115,6 +115,9 @@ git config --global user.email thien.hophu@gmail.com
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
 nvm install 14
+
+code /etc/sysctl.conf
+fs.inotify.max_user_watches=524288
 ```
 
 ##### Auto Detect and install in source file (zshrc, bash_profile,...) (alternative is avn, which only switch node)
