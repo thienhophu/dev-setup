@@ -21,6 +21,13 @@ Get-AppxPackage *portal* | Remove-AppxPackage
 Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 ```
 
+## SSH Key
+```
+ssh-keygen.exe
+
+clip < ~/.ssh/id_rsa.pub
+```
+
 ## Hyper.js
 
 ##### Install from https://hyper.is/
