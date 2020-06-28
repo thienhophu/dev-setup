@@ -221,6 +221,7 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 rm composer-setup.php
 sudo chown -R $USER $HOME/.composer
 echo 'export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH' >> ~/.zshrc
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
 ```
