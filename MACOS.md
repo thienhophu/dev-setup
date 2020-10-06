@@ -157,7 +157,7 @@ sdk install java 8.0.222-zulu
 
 ```
 brew install mysql@5.7
-echo 'export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+brew link mysql@5.7 --force
 brew services start mysql@5.7
 restart terminal
 ```
@@ -185,14 +185,14 @@ mysql -u root -p database_name < file.sql
 brew install mysql
 ```
 
-## PHP 7.2 (For Normal Dev)
+## PHP 7.3 (For Normal Dev)
 
 ```
-brew install php@7.2
-brew link php@7.2 --force
+brew install php@7.3
+brew link php@7.3 --force
 ```
 
-## PHP 7.3 (For Adv.)
+## PHP 7.4 (For Adv.)
 
 ```
 brew install php
@@ -201,8 +201,8 @@ brew install php
 ## Add to your PATH
 
 ```
-echo 'export PATH="/usr/local/opt/php@7.2/bin:$PATH"' >> ~/.zshrc
-echo 'export PATH="/usr/local/opt/php@7.2/sbin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/php@7.3/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/php@7.3/sbin:$PATH"' >> ~/.zshrc
 ```
 
 ## PHP Extensions
@@ -285,7 +285,7 @@ xdebug.remote_autostart=1
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | zsh
 ```
 
 ##### Install auto use
