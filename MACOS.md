@@ -23,6 +23,11 @@ csrutil clear
 csrutil enable
 ```
 
+## Allow Apps from Anywhere
+```
+sudo spctl --master-disable
+```
+
 ## Homebrew
 
 ##### Install
