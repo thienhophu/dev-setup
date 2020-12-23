@@ -226,6 +226,9 @@ pecl install imagick
 
 ```
 brew install composer
+
+// Downgrade to version 1 if needed
+composer self-update 1.10.15
 ```
 
 ##### Add to PATH
