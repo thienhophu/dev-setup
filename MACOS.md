@@ -236,12 +236,6 @@ source ~/.zshrc
 echo $PATH
 ```
 
-##### Composer parallel
-
-```
-composer global require hirak/prestissimo
-```
-
 ## Valet
 
 ```
@@ -290,7 +284,7 @@ xdebug.remote_autostart=1
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
 ```
 
 ##### Install auto use
@@ -417,7 +411,7 @@ pg_ctl -D /usr/local/var/postgres start
 
 ```
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 ```
 
 ###### Add to vscode
