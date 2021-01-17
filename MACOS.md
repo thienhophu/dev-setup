@@ -229,6 +229,7 @@ brew install composer
 
 // Downgrade to version 1 if needed
 composer self-update 1.10.15
+composer global require hirak/prestissimo
 ```
 
 ##### Add to PATH
