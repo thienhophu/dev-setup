@@ -457,3 +457,9 @@ Note: To convert plain text email to html email, go to Preferences->Composition-
 ```
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
 ```
+
+### Docker
+#### Mailhog
+```
+docker run  --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
+```
