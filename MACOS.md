@@ -288,7 +288,7 @@ xdebug.remote_autostart=1
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | zsh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | zsh
 ```
 
 ##### Install auto use
