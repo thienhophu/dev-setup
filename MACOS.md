@@ -461,5 +461,5 @@ Note: To convert plain text email to html email, go to Preferences->Composition-
 ### Docker
 #### Mailhog
 ```
-docker run  --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
+docker run -d --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
 ```
