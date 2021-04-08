@@ -190,24 +190,11 @@ mysql -u root -p database_name < file.sql
 brew install mysql
 ```
 
-## PHP 7.3 (For Normal Dev)
-
-```
-brew install php@7.3
-brew link php@7.3 --force
-```
-
 ## PHP 7.4 (For Adv.)
 
 ```
-brew install php
-```
-
-## Add to your PATH
-
-```
-echo 'export PATH="/usr/local/opt/php@7.3/bin:$PATH"' >> ~/.zshrc
-echo 'export PATH="/usr/local/opt/php@7.3/sbin:$PATH"' >> ~/.zshrc
+brew install php@7.4
+brew link php@7.4 --force
 ```
 
 ## PHP Extensions
@@ -272,6 +259,10 @@ pecl install xdebug
 zend_extension="xdebug.so"
 xdebug.remote_enable=1
 xdebug.remote_autostart=1
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.discover_client_host=true
+xdebug.client_port=9000
 ```
 
 ##### Add to launch.json of VSCode
