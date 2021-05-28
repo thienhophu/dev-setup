@@ -113,8 +113,10 @@ git config --global user.email thien.hophu@gmail.com
 ### NVM
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | zsh
-nvm install 14
+https://github.com/nvm-sh/nvm#install--update-script
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | zsh
+nvm install 16
 ```
 
 ##### Auto Detect and install in source file (zshrc, bash_profile,...) (alternative is avn, which only switch node)
@@ -152,6 +154,92 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
+### MYSQL - Server
+
+```
+sudo apt install mysql-server
+sudo systemctl status mysql
+
+sudo mysql_secure_installation
+// no validate password
+// y y y y
+sudo mysql -u root -p
+
+// sql command
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
+FLUSH PRIVILEGES;
+exit;
+
+mysql -u root -p
+```
+
+### PHP
+
+```
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+```
+
+#### PHP@7.3
+
+```
+sudo apt install -y php7.3
+
+sudo apt install -y php7.3-curl php7.3-gd php7.3-mbstring php7.3-intl php7.3-mysql php7.3-xml php7.3-zip php7.3-bcmath php7.3-fpm
+sudo apt install php7.3-imagick
+```
+
+#### PHP@7.4
+
+```
+sudo apt install -y php7.4
+
+sudo apt install -y php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-intl php7.4-mysql php7.4-xml php7.4-zip php7.4-bcmath php7.4-fpm
+sudo apt install php7.4-imagick
+```
+
+### Composer
+
+```
+curl -sS https://getcomposer.org/installer |php
+mv composer.phar /usr/local/bin/composer
+echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+#### Composer Libaries
+
+```
+sudo composer self-update --1
+composer global require hirak/prestissimo
+```
+
+## Valet
+
+```
+sudo apt install network-manager jq xsel libnss3-tools
+composer global require cpriego/valet-linux
+valet install
+valet park
+service apache2 stop
+valet restart
+```
+
+### GitEye
+
+##### Copy to content
+
+```
+sudo chown -R root:root GitEye
+sudo cp -r GitEye /opt/GitEye
+```
+
+##### Open GitEye in terminal (Note: It will keep running GitEye on that tab).
+
+```
+sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
+```
+
 ### SDKMAN (Java Version Manager)
 
 ```
@@ -183,79 +271,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
-
-### MYSQL - Server
-
-```
-sudo apt install mysql-server
-sudo systemctl status mysql
-
-sudo mysql_secure_installation
-// no validate password
-// y y y y
-sudo mysql -u root -p
-
-// sql command
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1234';
-FLUSH PRIVILEGES;
-exit;
-
-mysql -u root -p
-```
-
-### PHP
-
-```
-sudo add-apt-repository ppa:ondrej/php
-sudo apt update
-sudo apt install -y php
-sudo apt install -y php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-intl php7.4-mysql php7.4-xml php7.4-zip php7.4-bcmath php7.4-fpm php-imagick
-```
-
-### Composer
-
-```
-curl -sS https://getcomposer.org/installer -o composer-setup.php
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-rm composer-setup.php
-sudo chown -R $USER $HOME/.composer
-echo 'export PATH=$HOME/bin:/usr/local/bin:$HOME/.config/composer/vendor/bin:$PATH' >> ~/.zshrc
-echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
-source ~/.zshrc
-echo $PATH
-```
-
-#### Composer Libaries
-
-```
-composer global require hirak/prestissimo
-```
-
-## Valet
-
-```
-sudo apt install network-manager jq xsel libnss3-tools
-composer global require cpriego/valet-linux
-valet install
-valet park
-service apache2 stop
-valet restart
-```
-
-### GitEye
-
-##### Copy to content
-
-```
-sudo chown -R root:root GitEye
-sudo cp -r GitEye /opt/GitEye
-```
-
-##### Open GitEye in terminal (Note: It will keep running GitEye on that tab).
-
-```
-sudo ln -s /opt/GitEye/GitEye /usr/local/bin/GitEye
 ```
 
 ## Customize OS
