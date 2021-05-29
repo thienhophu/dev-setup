@@ -96,11 +96,17 @@ cat ~/.ssh/id_rsa.pub
 ### Homebrew
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+sudo apt-get install build-essential procps curl file git
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 // ~/.zshrc
 # Homebrew
 eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+```
+
+```
+sudo pecl channel-update pecl.php.net
+sudo pecl install xdebug
 ```
 
 ### Git
@@ -223,6 +229,29 @@ valet install
 valet park
 service apache2 stop
 valet restart
+```
+
+## Xdebug
+
+##### Install
+
+```
+sudo apt install php7.3-xdebug
+```
+
+##### Add to
+
+```
+sudo touch /etc/php/7.3/cli/conf.d/20-xdebug.ini
+sudo code /etc/php/7.3/cli/conf.d/20-xdebug.ini
+```
+
+```
+zend_extension=xdebug.so
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.discover_client_host=true
+xdebug.client_port=9000
 ```
 
 ### GitEye
