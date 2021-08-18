@@ -6,7 +6,8 @@
 
 ```
 sudo apt update
-sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+sudo apt install -y apt-transport-https ca-certificates curl gnupg-agent so
+ftware-properties-common
 ```
 
 ## Essential Apps
@@ -177,6 +178,13 @@ FLUSH PRIVILEGES;
 exit;
 
 mysql -u root -p
+```
+
+## DBeaver
+```
+sudo apt-get install mysql-client
+// Add Local Client, Add Home
+/usr/bin
 ```
 
 ### PHP
