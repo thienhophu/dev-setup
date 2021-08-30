@@ -8,6 +8,12 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
+## SnapShot
+```
+tmutil listlocalsnapshots /
+tmutil localsnapshot
+```
+
 ## Disable SIP
 
 ```
