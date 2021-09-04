@@ -21,6 +21,11 @@ Get-AppxPackage *portal* | Remove-AppxPackage
 Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 ```
 
+## Allow to run command
+```
+set-executionpolicy remotesigned
+```
+
 ## SSH Key
 ```
 ssh-keygen.exe
