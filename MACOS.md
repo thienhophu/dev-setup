@@ -39,7 +39,7 @@ sudo spctl --master-disable
 ##### Install
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ##### Clean up brew
@@ -84,14 +84,9 @@ brew install zsh
 ##### Install via curl
 
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-##### Install via wget
-
-```
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-```
 
 ##### Install zsh-autosuggestions
 
@@ -283,7 +278,7 @@ xdebug.client_port=9000
 ##### Install via Curl
 
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | zsh
+brew install nvm
 ```
 
 ##### Install auto use
