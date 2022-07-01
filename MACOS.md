@@ -158,6 +158,8 @@ brew cask install adoptopenjdk8
 
 ```
 sdk install java 8.0.222-zulu
+sdk default java 8.0.222-zulu
+sdk home java 8.0.222-zulu
 ```
 
 ## MySQL 5.7 (For Normal Dev)
