@@ -126,6 +126,8 @@ sudo gem install cocoapods
 
 ```
 brew install rbenv
+rbenv init
+rbenv global 3.1.2
 ```
 
 ## SDKMAN
