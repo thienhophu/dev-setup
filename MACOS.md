@@ -397,6 +397,21 @@ pg_ctl -D /usr/local/var/postgres start
 
 # TOOLS
 
+## DBeaver
+```
+// Postgres
+brew install libpq
+echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> ~/.zshrc
+
+// MySQL 5.7
+brew install mysql-client@5.7
+echo 'export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"' >> ~/.zshrc
+
+// MySQL
+brew install mysql-client
+echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
+```
+
 ## VSCODE
 
 ##### Install from https://code.visualstudio.com/
