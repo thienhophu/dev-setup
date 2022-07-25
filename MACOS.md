@@ -491,3 +491,8 @@ docker run -d --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
 ```
 docker run -d --restart always -e POSTGRES_PASSWORD=12341234 -p 5432:5432 postgres
 ```
+
+#### MySql 5.7
+```
+docker run -d --restart always -e MYSQL_ROOT_PASSWORD=12341234 -p 3306:3306 mysql:5.7
+```
