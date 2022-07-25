@@ -486,3 +486,8 @@ Note: To convert plain text email to html email, go to Preferences->Composition-
 ```
 docker run -d --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
 ```
+
+#### Postgres
+```
+docker run -d --restart always -e POSTGRES_PASSWORD=12341234 -p 5432:5432 postgres
+```
