@@ -153,7 +153,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 brew tap AdoptOpenJDK/openjdk
 brew install adoptopenjdk11
-brew cask install adoptopenjdk8
+brew install --cask adoptopenjdk8
 ```
 
 ##### Install via SDKMan
