@@ -69,6 +69,8 @@ brew install git
 ```
 git config --global user.name "Thien Ho"
 git config --global user.email thien.hophu@gmail.com
+touch ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 ```
 
 ## ZSH
