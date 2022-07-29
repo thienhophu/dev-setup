@@ -116,12 +116,6 @@ ssh-keygen -t rsa
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-## Cocoapods
-
-```
-sudo gem install cocoapods
-```
-
 ## rbenv
 
 ##### Install via Homebrew
@@ -129,7 +123,14 @@ sudo gem install cocoapods
 ```
 brew install rbenv
 rbenv init
+rbenv install 3.1.2
 rbenv global 3.1.2
+```
+
+## Cocoapods
+
+```
+sudo gem install cocoapods
 ```
 
 ## SDKMAN
