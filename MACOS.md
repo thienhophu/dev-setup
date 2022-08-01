@@ -406,6 +406,8 @@ pg_ctl -D /usr/local/var/postgres start
 /opt/homebrew/bin
 
 // Postgres
+brew install postgresql
+
 brew install libpq
 echo 'export PATH="/usr/local/opt/libpq/bin:$PATH"' >> ~/.zshrc
 
