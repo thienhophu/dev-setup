@@ -499,3 +499,8 @@ docker run -d --restart always -e POSTGRES_PASSWORD=12341234 -p 5432:5432 postgr
 ```
 docker run -d --restart always -e MYSQL_ROOT_PASSWORD=12341234 -p 3306:3306 mysql:5.7
 ```
+
+#### OpenSearch
+```
+docker run -d --restart always -p 9200:9200 -p 9600:9600 -e "discovery.type=single-node" -e "DISABLE_SECURITY_PLUGIN=true" opensearchproject/opensearch
+```
