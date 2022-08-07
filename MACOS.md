@@ -504,3 +504,7 @@ docker run -d --restart always -e MYSQL_ROOT_PASSWORD=12341234 -p 3306:3306 mysq
 ```
 docker run -d --restart always -p 9200:9200 -p 9600:9600 -e "discovery.type=single-node" -e "DISABLE_SECURITY_PLUGIN=true" opensearchproject/opensearch
 ```
+
+#### Redis
+```
+docker run -d --restart always -p 6380:6380 redis redis-server --port 6380
