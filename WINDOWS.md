@@ -120,6 +120,11 @@ https://mlocati.github.io/articles/php-windows-imagick.html
 choco install firacode
 ```
 
+## Git
+```
+winget install --id Git.Git -e --source winget
+```
+
 ## SSH Keys
 
 ```
