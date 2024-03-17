@@ -58,3 +58,24 @@ nvm alias default 20.11.1
 ``` bash
 brew install yarn
 ```
+
+## SDKMan + Java JDK
+
+``` bash
+brew install zip
+curl -s "https://get.sdkman.io" | bash
+sdk install java 11.0.22-zulu
+```
+
+## Android
+
+``` bash
+https://gist.github.com/steveclarke/d988d89e8cdf51a8a5766d69ecb07e7b
+
+# ANDROID path into .zshrc
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
