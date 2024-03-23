@@ -4,12 +4,16 @@
 
 ``` bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.zshrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 ```
 
 ## ZSH
 
 ``` bash
-git install zsh
+sudo apt install zsh
+chsh -s $(which zsh)
 ```
 
 ## Oh my zsh
