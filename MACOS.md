@@ -2,21 +2,22 @@
 
 ## MacOS Install
 
-```
+``` bash
 diskutil list
 sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
 ```
 
 ## SnapShot
-```
+
+``` bash
 tmutil listlocalsnapshots /
 tmutil localsnapshot
 ```
 
 ## Disable SIP
 
-```
+``` bash
 Restart
 CMD + R while Boot
 Open terminal
@@ -30,7 +31,8 @@ csrutil enable
 ```
 
 ## Allow Apps from Anywhere
-```
+
+``` bash
 sudo spctl --master-disable
 ```
 
@@ -38,13 +40,13 @@ sudo spctl --master-disable
 
 ##### Install
 
-```
+``` bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ##### Clean up brew
 
-```
+``` bash
 brew cleanup
 ```
 
@@ -52,7 +54,7 @@ brew cleanup
 
 ##### Install via Homebrew
 
-```
+``` bash
 brew install curl
 ```
 
@@ -60,13 +62,13 @@ brew install curl
 
 #### Install via Homebrew
 
-```
+``` bash
 brew install git
 ```
 
 #### Config user infor
 
-```
+``` bash
 git config --global user.name "Thien Ho"
 git config --global user.email thien.hophu@gmail.com
 touch ~/.gitignore_global
@@ -77,7 +79,7 @@ git config --global core.excludesfile ~/.gitignore_global
 
 ##### Install via Homebrew
 
-```
+``` bash
 brew install zsh
 ```
 
@@ -85,16 +87,15 @@ brew install zsh
 
 ##### Install via curl
 
-```
+``` bash
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
 
 ##### Install zsh-autosuggestions
 
 ##### Clone and add to zsh
 
-```
+``` bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 plugins=(zsh-autosuggestions)
@@ -102,7 +103,7 @@ plugins=(zsh-autosuggestions)
 
 ##### Install via Brew
 
-```
+``` bash
 brew install zsh-autosuggestions
 // Add this to zshrc
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -110,7 +111,7 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ## SSH Keys
 
-```
+``` bash
 ssh-keygen -t rsa
 // Copy to clipboard
 pbcopy < ~/.ssh/id_rsa.pub
@@ -120,7 +121,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 ##### Install via Homebrew
 
-```
+``` bash
 brew install rbenv
 rbenv init
 rbenv install 3.1.2
@@ -129,7 +130,7 @@ rbenv global 3.1.2
 
 ## Cocoapods
 
-```
+``` bash
 sudo gem install cocoapods
 ```
 
@@ -137,13 +138,13 @@ sudo gem install cocoapods
 
 ##### Install via curl
 
-```
+``` bash
 curl -s "https://get.sdkman.io" | zsh
 ```
 
 ##### New terminal
 
-```
+``` bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
@@ -151,7 +152,7 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ##### Brew (One version only)
 
-```
+``` bash
 brew tap AdoptOpenJDK/openjdk
 brew install adoptopenjdk11
 brew install --cask adoptopenjdk8
@@ -159,7 +160,7 @@ brew install --cask adoptopenjdk8
 
 ##### Install via SDKMan
 
-```
+``` bash
 sdk install java 8.0.222-zulu
 sdk default java 8.0.222-zulu
 sdk home java 8.0.222-zulu
@@ -169,7 +170,7 @@ sdk home java 8.0.222-zulu
 
 ##### Install via Brew
 
-```
+``` bash
 brew install mysql@5.7
 brew link mysql@5.7 --force
 brew services start mysql@5.7
@@ -178,7 +179,7 @@ restart terminal
 
 ##### Secure your mysql
 
-```
+``` bash
 mysql_secure_installation
 (validate password) no
 (enter new password)
@@ -187,7 +188,7 @@ mysql_secure_installation
 
 ##### Import from sql
 
-```
+``` bash
 mysql -u root -p database_name < file.sql
 ```
 
@@ -195,13 +196,13 @@ mysql -u root -p database_name < file.sql
 
 ##### Install via Brew
 
-```
+``` bash
 brew install mysql
 ```
 
 ## PHP 7.4 (For Adv.)
 
-```
+``` bash
 brew install php@7.4
 brew link php@7.4 --force
 ```
@@ -210,7 +211,7 @@ brew link php@7.4 --force
 
 ### Imagemagick
 
-```
+``` bash
 brew install imagemagick
 brew install pkg-config
 pecl install imagick
@@ -220,7 +221,7 @@ pecl install imagick
 
 ##### Install via Brew
 
-```
+``` bash
 brew install composer
 
 // Downgrade to version 1 if needed
@@ -230,7 +231,7 @@ composer global require hirak/prestissimo
 
 ##### Add to PATH
 
-```
+``` bash
 echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
 source ~/.zshrc
 echo $PATH
@@ -238,7 +239,7 @@ echo $PATH
 
 ## Valet
 
-```
+``` bash
 composer global require laravel/valet
 valet install
 ```
@@ -247,14 +248,14 @@ valet install
 
 ##### Install tools via brew
 
-```
+``` bash
 brew install autoconf
 brew install automake
 ```
 
 ##### Instal via Pecl
 
-```
+``` bash
 pecl install xdebug
 (restart valet)
 ```
@@ -263,7 +264,7 @@ pecl install xdebug
 
 ##### Add to bottom of conf.d/ext-xdebug.ini
 
-```
+``` bash
 [XDebug]
 xdebug.mode=debug
 xdebug.start_with_request=yes
@@ -273,7 +274,7 @@ xdebug.client_port=9000
 
 ##### Add to launch.json of VSCode
 
-```
+``` bash
 "xdebugSettings":
 {
   "max_depth": 200,
@@ -284,13 +285,13 @@ xdebug.client_port=9000
 
 ##### Install via Curl
 
-```
+``` bash
 brew install nvm
 ```
 
 ##### Install auto use
 
-```
+``` bash
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {
@@ -318,14 +319,14 @@ load-nvmrc
 
 ##### Install via NVM
 
-```
+``` bash
 nvm install [version]
 nvm use [version]
 ```
 
 ## Yarn
 
-```
+``` bash
 brew install yarn
 ```
 
@@ -333,13 +334,13 @@ brew install yarn
 
 ##### Install via brew
 
-```
+``` bash
 brew install ruby
 ```
 
 ##### Install bundler
 
-```
+``` bash
 gem install bundler
 bundle install
 
@@ -351,7 +352,7 @@ bundle exec fastlane
 
 ##### Install gradle via brew
 
-```
+``` bash
 brew install gradle
 or
 sdk install gradle [version]
@@ -359,7 +360,7 @@ sdk install gradle [version]
 
 ##### Add PATH
 
-```
+``` bash
 #THIS IS FOR ANDROID PATH
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -370,25 +371,25 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ## Sentry CLI
 
-```
+``` bash
 curl -sL https://sentry.io/get-cli/ | zsh
 ```
 
 ## Fastlane
 
-```
+``` bash
 sudo gem install fastlane -NV
 ```
 
 ## React Native Debugger
 
-```
+``` bash
 brew cask install react-native-debugger
 ```
 
 ## PostgreSQL
 
-```
+``` bash
 brew install postgresql
 // Init
 initdb /usr/local/var/postgres
@@ -401,7 +402,8 @@ pg_ctl -D /usr/local/var/postgres start
 # TOOLS
 
 ## DBeaver
-```
+
+``` bash
 // Add home
 /opt/homebrew/bin
 
@@ -422,7 +424,7 @@ echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
 
 ## VSCODE
 
-##### Install from https://code.visualstudio.com/
+##### Install from <https://code.visualstudio.com/>
 
 #### VSCODE -- Extension
 
@@ -430,14 +432,14 @@ echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
 
 ###### Install font
 
-```
+``` bash
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 ```
 
 ###### Add to vscode
 
-```
+``` bash
 "editor.fontFamily": "Fira Code",
 "editor.fontLigatures": true,
 ```
@@ -446,14 +448,14 @@ brew install --cask font-fira-code
 
 ##### Install via Homebrew
 
-```
+``` bash
 brew update
 brew cask install hyper
 ```
 
 ##### Set ZSH as default shell
 
-```
+``` bash
 shell: 'zsh'
 ```
 
@@ -461,13 +463,13 @@ shell: 'zsh'
 
 ##### Install from offical page
 
-```
+``` bash
 https://www.charlesproxy.com/
 ```
 
 ##### Charles Hacking
 
-```
+``` bash
 https://github.com/100apps/charles-hacking
 ```
 
@@ -480,31 +482,37 @@ Note: To convert plain text email to html email, go to Preferences->Composition-
 
 ### Chrome Debugger VSCODE - Attach
 
-```
+``` bash
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
 ```
 
 ### Docker
+
 #### Mailhog
-```
+
+``` bash
 docker run -d --restart always -p 8025:8025 -p 1025:1025 mailhog/mailhog
 ```
 
 #### Postgres
-```
+
+``` bash
 docker run -d --restart always -e POSTGRES_PASSWORD=12341234 -p 5432:5432 postgres
 ```
 
 #### MySql 5.7
-```
+
+``` bash
 docker run -d --restart always -e MYSQL_ROOT_PASSWORD=12341234 -p 3306:3306 mysql:5.7
 ```
 
 #### OpenSearch
-```
+
+``` bash
 docker run -d --restart always -p 9200:9200 -p 9600:9600 -e "discovery.type=single-node" -e "DISABLE_SECURITY_PLUGIN=true" opensearchproject/opensearch
 ```
 
 #### Redis
-```
+
+``` bash
 docker run -d --restart always -p 6380:6380 redis redis-server --port 6380

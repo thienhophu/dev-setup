@@ -2,7 +2,7 @@
 
 ## Uninstall unused packages
 
-```
+``` bash
 Get-AppxPackage *alarm* | Remove-AppxPackage
 Get-AppxPackage *zune* | Remove-AppxPackage
 Get-AppxPackage *people* | Remove-AppxPackage
@@ -23,20 +23,20 @@ Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 
 ## SSH Keys
 
-```
+``` bash
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-## Hyper.js (https://hyper.is/)
+## Hyper.js (<https://hyper.is/>)
 
-```
+``` bash
 shell: 'C:\\Windows\\SysWOW64\\WindowsPowerShell\\v1.0\\powershell.exe',
 ```
 
 ## Chocolatey
 
-```
+``` bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
@@ -44,6 +44,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Libraries
 
-```
+``` bash
 choco install -y nodejs.install python2 jdk8 yarn
 ```
