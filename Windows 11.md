@@ -31,6 +31,13 @@ choco install -y microsoft-openjdk17
 
 ## NVM
 
+You can install the nvm-windows with installer
+```
+https://github.com/coreybutler/nvm-windows
+```
+
+or you can install it from Choco
+
 ``` Powershell
 choco install nvm
 ```
