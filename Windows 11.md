@@ -87,3 +87,19 @@ choco install firacode
 // ADB tools - Add new path in PATH variable
 %LOCALAPPDATA%\Android\Sdk\platform-tools
 ```
+
+## Ionic Setup
+
+Weird thing is that we have to combine Terminal and CMD to install the Ionic CLI
+First, make sure the nodejs is in your PATH (default path of the node from nvm-windows is C:\Program Files\nodejs)
+Then using Terminal (Run as Administrator) to install the Ionic CLI
+
+```
+npm install -g @ionic/cli
+```
+
+Then open the CMD to verify the ionic
+
+```
+ionic --version
+```
