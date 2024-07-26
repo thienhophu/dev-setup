@@ -21,6 +21,13 @@ Set-ExecutionPolicy Unrestricted
 Funny things that install Chocolatey from official website is not good enough.
 We suggest to install it through nodejs - <https://nodejs.org/en/download> - pick LTS
 
+You now can install with Terminal (Run as Administrator)
+
+```
+Set-ExecutionPolicy AllSigned
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
 ## OpenJDK11
 
 This will automatically install the path for Java
