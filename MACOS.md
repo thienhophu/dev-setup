@@ -139,7 +139,7 @@ sudo gem install cocoapods
 ##### Install via curl
 
 ``` bash
-curl -s "https://get.sdkman.io" | zsh
+curl -s "https://get.sdkman.io" | bash
 ```
 
 ##### New terminal
