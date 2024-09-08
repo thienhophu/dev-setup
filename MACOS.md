@@ -124,8 +124,8 @@ pbcopy < ~/.ssh/id_rsa.pub
 ``` bash
 brew install rbenv
 rbenv init
-rbenv install 3.1.2
-rbenv global 3.1.2
+rbenv install 3.1.6
+rbenv global 3.1.6
 ```
 
 ## Cocoapods
