@@ -166,121 +166,6 @@ sdk default java 8.0.222-zulu
 sdk home java 8.0.222-zulu
 ```
 
-## MySQL 5.7 (For Normal Dev)
-
-##### Install via Brew
-
-``` bash
-brew install mysql@5.7
-brew link mysql@5.7 --force
-brew services start mysql@5.7
-restart terminal
-```
-
-##### Secure your mysql
-
-``` bash
-mysql_secure_installation
-(validate password) no
-(enter new password)
-(Y Y Y Y)
-```
-
-##### Import from sql
-
-``` bash
-mysql -u root -p database_name < file.sql
-```
-
-## MySQL 8.0 (For Adv.)
-
-##### Install via Brew
-
-``` bash
-brew install mysql
-```
-
-## PHP 7.4 (For Adv.)
-
-``` bash
-brew install php@7.4
-brew link php@7.4 --force
-```
-
-## PHP Extensions
-
-### Imagemagick
-
-``` bash
-brew install imagemagick
-brew install pkg-config
-pecl install imagick
-```
-
-## Composer
-
-##### Install via Brew
-
-``` bash
-brew install composer
-
-// Downgrade to version 1 if needed
-composer self-update 1.10.15
-composer global require hirak/prestissimo
-```
-
-##### Add to PATH
-
-``` bash
-echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
-source ~/.zshrc
-echo $PATH
-```
-
-## Valet
-
-``` bash
-composer global require laravel/valet
-valet install
-```
-
-## Xdebug for PHP 7.3
-
-##### Install tools via brew
-
-``` bash
-brew install autoconf
-brew install automake
-```
-
-##### Instal via Pecl
-
-``` bash
-pecl install xdebug
-(restart valet)
-```
-
-##### Locate php by php --ini
-
-##### Add to bottom of conf.d/ext-xdebug.ini
-
-``` bash
-[XDebug]
-xdebug.mode=debug
-xdebug.start_with_request=yes
-xdebug.discover_client_host=true
-xdebug.client_port=9000
-```
-
-##### Add to launch.json of VSCode
-
-``` bash
-"xdebugSettings":
-{
-  "max_depth": 200,
-}
-```
-
 ## NVM
 
 ##### Install via Curl
@@ -399,6 +284,122 @@ brew services start postgresql
 pg_ctl -D /usr/local/var/postgres start
 ```
 
+## MySQL 5.7 (For Normal Dev)
+
+##### Install via Brew
+
+``` bash
+brew install mysql@5.7
+brew link mysql@5.7 --force
+brew services start mysql@5.7
+restart terminal
+```
+
+##### Secure your mysql
+
+``` bash
+mysql_secure_installation
+(validate password) no
+(enter new password)
+(Y Y Y Y)
+```
+
+##### Import from sql
+
+``` bash
+mysql -u root -p database_name < file.sql
+```
+
+## MySQL 8.0 (For Adv.)
+
+##### Install via Brew
+
+``` bash
+brew install mysql
+```
+
+## PHP 7.4 (For Adv.)
+
+``` bash
+brew install php@7.4
+brew link php@7.4 --force
+```
+
+## PHP Extensions
+
+### Imagemagick
+
+``` bash
+brew install imagemagick
+brew install pkg-config
+pecl install imagick
+```
+
+## Composer
+
+##### Install via Brew
+
+``` bash
+brew install composer
+
+// Downgrade to version 1 if needed
+composer self-update 1.10.15
+composer global require hirak/prestissimo
+```
+
+##### Add to PATH
+
+``` bash
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.zshrc
+source ~/.zshrc
+echo $PATH
+```
+
+## Valet
+
+``` bash
+composer global require laravel/valet
+valet install
+```
+
+## Xdebug for PHP 7.3
+
+##### Install tools via brew
+
+``` bash
+brew install autoconf
+brew install automake
+```
+
+##### Instal via Pecl
+
+``` bash
+pecl install xdebug
+(restart valet)
+```
+
+##### Locate php by php --ini
+
+##### Add to bottom of conf.d/ext-xdebug.ini
+
+``` bash
+[XDebug]
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.discover_client_host=true
+xdebug.client_port=9000
+```
+
+##### Add to launch.json of VSCode
+
+``` bash
+"xdebugSettings":
+{
+  "max_depth": 200,
+}
+```
+
+
 # TOOLS
 
 ## DBeaver
@@ -433,7 +434,6 @@ echo 'export PATH="/usr/local/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
 ###### Install font
 
 ``` bash
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 ```
 
