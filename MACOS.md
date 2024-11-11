@@ -402,6 +402,18 @@ xdebug.client_port=9000
 }
 ```
 
+##### Colima - Docker Engine
+```
+brew install colima
+colima start
+```
+
+##### Docker Client
+```
+brew install docker
+brew install docker-compose
+# Using cmd `docker-compose` for version 2 instead of `docker compose`
+```
 
 # TOOLS
 
