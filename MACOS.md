@@ -269,7 +269,7 @@ sudo gem install fastlane -NV
 ## React Native Debugger
 
 ``` bash
-brew cask install react-native-debugger
+brew install --cask react-native-debugger
 ```
 
 ## PostgreSQL
