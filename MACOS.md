@@ -322,7 +322,6 @@ brew install mysql
 
 ``` bash
 brew install shivammathur/php/php@7.4
-brew install shivammathur/php/php@7.4
 
 ~~brew install php@7.4~~
 brew link php@7.4 --force
