@@ -36,6 +36,12 @@ csrutil enable
 sudo spctl --master-disable
 ```
 
+## Fix crash application
+```
+xattr -cr /Applications/aaa.app
+// Check Seuciry to allow after running this command
+```
+
 ## Homebrew
 
 ##### Install
