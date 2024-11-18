@@ -370,7 +370,7 @@ composer global require laravel/valet
 valet install
 ```
 
-## Xdebug for PHP 7.3
+## Xdebug for PHP 7.4
 
 ##### Install tools via brew
 
@@ -382,7 +382,7 @@ brew install automake
 ##### Instal via Pecl
 
 ``` bash
-pecl install xdebug
+pecl install xdebug-3.1.5
 (restart valet)
 ```
 
