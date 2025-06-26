@@ -100,6 +100,16 @@ sudo apt update
 sudo apt install --no-install-recommends yarn
 ```
 
+### Rbenv - Ruby
+
+```
+brew install rbenv libffi
+sudo apt install zlib1g-dev
+
+rbenv rehash
+rbenv install -l
+```
+
 ### MYSQL - Server
 
 ```
