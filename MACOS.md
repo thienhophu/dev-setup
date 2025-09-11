@@ -81,15 +81,7 @@ touch ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-## ZSH
-
-##### Install via Homebrew
-
-``` bash
-brew install zsh
-```
-
-## Oh My Zsh
+## Oh My Zsh - Zsh
 
 ##### Install via curl
 
@@ -148,28 +140,14 @@ sudo gem install cocoapods
 curl -s "https://get.sdkman.io" | bash
 ```
 
-##### New terminal
-
-``` bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
-```
-
 ## Java
-
-##### Brew (One version only)
-
-``` bash
-brew tap AdoptOpenJDK/openjdk
-brew install adoptopenjdk11
-brew install --cask adoptopenjdk8
-```
 
 ##### Install via SDKMan
 
 ``` bash
-sdk install java 8.0.222-zulu
-sdk default java 8.0.222-zulu
-sdk home java 8.0.222-zulu
+sdk install java 17.0.16-zulu
+sdk default java 17.0.16-zulu
+sdk home java 17.0.16-zulu
 ```
 
 ## NVM
@@ -219,24 +197,6 @@ nvm use [version]
 
 ``` bash
 brew install yarn
-```
-
-## Ruby
-
-##### Install via brew
-
-``` bash
-brew install ruby
-```
-
-##### Install bundler
-
-``` bash
-gem install bundler
-bundle install
-
-// Release
-bundle exec fastlane
 ```
 
 ## Android Studio
